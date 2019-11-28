@@ -22,9 +22,9 @@ If not installed then see [nodejs docs](https://nodejs.org/en/)
 
 The Gatsby CLI tool helps you quickly create new Gatsby-powered sites and run commands for developing Gatsby sites. It is a published npm package.
 
-The Gatsby CLI is available via npm and should be installed globally by running `npm install -g gatsby-cli `
+The Gatsby CLI is available via npm and should be installed globally by running `npm install -g gatsby-cli`
 
-## Create Gatsby site 
+## Create Gatsby site
 
 Open your Terminal and run the following command from the Gatsby CLI to create a new Gatsby site using any one of the [gatsby starter library](https://www.gatsbyjs.org/starters?v=2)  I personally used both [Gatsby starter blog](https://github.com/gatsbyjs/gatsby-starter-blog) and thomas's [Gatsby personal starter blog](https://github.com/thomaswangio/gatsby-personal-starter-blog) for blog in /blog page. 
 
@@ -43,7 +43,8 @@ Better use [Gatsby-personal-starter-blog](https://github.com/thomaswangio/gatsby
 Once the Gatsby site is finished installing all the packages and dependencies, you can now go into the directory and run the site locally.
 
 ```
-cd myblog/gatsby develop
+cd myblog/
+gatsby develop
 ```
 
 **If you get error in first code or in gatsby develop I have explained to debug at end of this blog.**
@@ -57,7 +58,12 @@ Open the project in your code editor and open static/admin/config.yml. Replace y
 Open the project in your code editor(preferably vs code)  and open `static/admin/config.yml`. Replace `your-username/your-repo-name` with your GitHub username and project name. This step comes handy when using Netlify cms.
 
 ```
-backend:-name:test-repo+name: github+repo: your-username/your-repo-name
+backend:
+
+-name:test-repo
+
++name: github
++repo: your-username/your-repo-name
 ```
 
 Customize your code according to your need like adding your info in bio.js and open github.com and create a new repository, with the same name as your project and push to github repo.
@@ -74,6 +80,6 @@ Congrats! Now that Netlify CMS is successfully configured to your project, every
 
 ## Common problems:
 
-* There may be problem with libvips so there is chance you may get error(I got one, common in fedora)
+**1)**There may be problem with libvips so there is chance you may get error(I got one, common in fedora)
 
-for this, delete `/Users/[your-username]/.npm/_libvips/[some .tar.gz] `file. After deleting that .tar.gz file run `npm install` now it works.
+for this, delete `/Users/[your-username]/.npm/_libvips/[some .tar.gz]`file. After deleting that .tar.gz file run `npm install` now it works.
