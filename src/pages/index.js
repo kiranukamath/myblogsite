@@ -16,20 +16,26 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         />
         {/*<img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />*/}
+        <Link to="/blog/">
+          <Button marginTop="35px">Go to Blog</Button>
+        </Link>
         <h1>
           Hello World{" "}
           <span role="img" aria-label="wave emoji">
             👋
           </span>
         </h1>
-        <p>Welcome to Personal Website</p>
+        <p>Welcome to my Personal Website</p>
         <p>
-          To read my blog click on blog button bottom of this page
+          I am currently pursuing Information science and Engineering in NIE mysore. Interested in machine learing. Also interested in react,nodejs,gatsby and everything interesting in javascript.
+        </p><br />
+        <p>You can contact me through<br />
+          email: kirankamat.mgm@gmail.com<br />
+          or follow me on &nbsp;
+          <a href="https://twitter.com/UKamath7">Twitter</a> &nbsp; <a href="https://www.linkedin.com/in/kiran-u-kamath/">Linkedin</a>
+
         </p>
-        <p>Do Epic shit!</p>
-        <Link to="/blog/">
-          <Button marginTop="35px">Go to Blog</Button>
-        </Link>
+        
       </Layout>
     )
   }
