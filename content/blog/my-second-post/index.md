@@ -1,6 +1,7 @@
 ---
 title: lost tomb of jesus!
 date: "2019-11-27T23:46:37.121Z"
+description: This is related to story of jesus.
 ---
 
 The film describes the finding of the Talpiot Tomb during a housing construction project, and posits that it was the family tomb of Jesus. The film states that ten ossuaries were found in the cave, of which six are the subject of the film. Further, it claims that one of the ten ossuaries went missing years ago, presumably stolen.
