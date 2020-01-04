@@ -1,7 +1,7 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
 <h1 align="center">
   My blog
-  <a href="https://kirankamath.netlify.com/">
+  <a href="https://kirankamath.netlify.com/blog/">
     https://kirankamath.netlify.com
   </a>
 </h1>
