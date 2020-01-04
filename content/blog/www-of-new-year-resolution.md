@@ -32,8 +32,6 @@ New year resolutions can become strong motivatinal tool and can helping in devel
 
 According to U.S. News & World Report, the failure rate for New Year's resolutions is said to be about 80 percent, and most lose their resolve by mid-February. If this is true, it's clear that there is nothing wrong with us; the problem is in the tradition itself. Reason may be anything from lack of clarity to setting high expectations. I agree, but I think there's more to it than that. We are unreasonable about resolution. Out of over excitement we may start resolution but it may backfire when we realize resolutions are not practically possible. 
 
-
-
 # How to design new year's resolution?
 
 Even though I'm writing this blog my statistics with new year resolution is not good. So I researched a lot to know how other people(specially developers) make and follow resolution. I went through a lot of blogs and I will list out what I found useful. I have not followed any but will implement along with you.
@@ -46,6 +44,14 @@ From Quincy Larson blog(mentioned at the end of this blog) I understood  3 impor
 
 Divide resolutions into smaller chunks. Divide into smaller period and complete each so that you are tracking your progress. You can join existing social tags like #100daysofCode from freecodecamp or #100daysofML from siraj raval, or start your own tags.
 
+I have read in some blog that identifing a word that can remind you about your complete resolution can be used. That word should create a positive vibe whenever you feel low. That word should inspire you and you can use it as mantra.
+
 Make resolution part of your routine. This is can be useful. Like if learning competitive coding is your new year's resolution then, practise it daily 1hr at same time. So that it becomes part of your life. 
 
-I have read in some blog that choosing a WORD for your resolution is also useful.
+Hoping this blog as helped you and you have enjoyed reading.
+
+Credits: Inspired from Quincy Larson [new year's resolution blog](https://www.freecodecamp.org/news/developer-new-years-resolution-guide/) 
+
+## Make awesome resolutions to improve everyday
+
+# Happy New Year
