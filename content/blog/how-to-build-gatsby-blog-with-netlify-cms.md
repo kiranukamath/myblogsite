@@ -1,7 +1,7 @@
 ---
 path: gatsby-netlifycms-starter
 date: 2019-11-27T16:15:13.013Z
-title: How to build Gatsby blog with Netlify CMS
+title: How to build Gatsby blog site with Netlify CMS
 description: Complete guild to build Gatsby blog with Netlify CMS
 ---
 I have followed instruction from Thomas Wang. I have tried to explain in detail all difficulties and solution in building this site.
