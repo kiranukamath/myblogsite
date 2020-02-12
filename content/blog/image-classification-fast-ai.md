@@ -1,7 +1,7 @@
 ---
 path: Image classification fastai
 date: 2020-02-12T02:17:43.775Z
-title: Image Classification fast.ai
+title: Image Classification fast.ai L1 part1
 description: my journey in fast.ai course
 ---
 In this Notebook I want to document my journey in fast.ai course.
