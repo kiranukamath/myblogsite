@@ -34,9 +34,9 @@ The lines in jupyter notebook that starts with ‘%’ are called Line Magics. T
 %matplotlib inline
 ```
 
-The **_reload_ext autoreload_** reloads modules automatically before entering the execution of code typed at the IPython prompt.
+The _**reload_ext autoreload**_ reloads modules automatically before entering the execution of code typed at the IPython prompt.
 
-The next line **_autoreload 2_** imports all modules before executing the typed code.
+The next line _**autoreload 2**_ imports all modules before executing the typed code.
 
 The next line is to plot the graphs inside the jupyter notebook. We use matplotlib inline.
 
@@ -105,7 +105,7 @@ fnames[:5]
 ```
 
 Fortunately, the fastai library has a handy function made exactly for this, **ImageDataBunch.from_name_re** gets the labels from the filenames using a regular expression.
-Detailed explanation of Regular expression is given in this [post](https://medium.com/@jamestjw/parsing-file-names-using-regular-expressions-3e85d64deb69) I found.
+Detailed explanation of Regular expression is given in this [post](https://medium.com/@jamestjw/parsing-file-names-using-regular-expressions-3e85d64deb69) and [this](https://docs.python.org/3/library/re.html#re.Match.group) I found.
 Regular expressions understanding is very important.
 
 ```
