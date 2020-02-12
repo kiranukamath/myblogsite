@@ -8,8 +8,6 @@ In this Notebook I want to document my journey in fast.ai course.
 Credits: fast.ai
 Lets start by configuring notebook
 
-
-
 ```
 !curl -s https://course.fast.ai/setup/colab | bash
 ```
@@ -36,9 +34,9 @@ The lines in jupyter notebook that starts with ‘%’ are called Line Magics. T
 %matplotlib inline
 ```
 
-The _**reload_ext autoreload**_ reloads modules automatically before entering the execution of code typed at the IPython prompt.
+The **_reload_ext autoreload_** reloads modules automatically before entering the execution of code typed at the IPython prompt.
 
-The next line _**autoreload 2**_ imports all modules before executing the typed code.
+The next line **_autoreload 2_** imports all modules before executing the typed code.
 
 The next line is to plot the graphs inside the jupyter notebook. We use matplotlib inline.
 
@@ -148,7 +146,7 @@ Test: None
 data.show_batch(rows=3, figsize=(7,6))
 ```
 
-![png](Image_Classification_fastai_files/output_22_0.png)
+![png](/assets/output_22_0.png)
 
 We use the **data.classes** to indicate the total number of distinct labels that were found. it indicates the number of distinct labels that were extracted from the regular expression.
 
