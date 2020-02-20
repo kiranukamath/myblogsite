@@ -399,3 +399,5 @@ learn.save('stage-1')
 ```
 
 We got accuracy of 94% which is just 6% error with just few lines of code, when compared to state of art model in 2012 paper which had 56% accuracy.
+
+To see python jupyter notebook [click here](https://github.com/kirankamatmgm/Deeplearning/blob/master/Image_Classification_fastai(L1).ipynb)
