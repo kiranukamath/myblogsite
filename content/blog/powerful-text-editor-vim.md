@@ -51,21 +51,21 @@ You should spend most of your time in normal mode, using movement commands to na
 
 * Basic movement: hjkl (left, down, up, right)
 * Words: w (next word), b (beginning of word), e (end of word)
-* Scroll: Ctrl-u (up), Ctrl-d (down)
+* Scroll: Ctrl u (up), Ctrl d (down)
 * Find: f{character},find
 
 ## Editing
 
 * **i** enter insert mode but for manipulating/deleting text, want to use something more than backspace
 * **o** / O insert line below / above
-* **d**{motion} delete {motion} e.g. dw is delete word, d$ is delete to end of line, d0 is delete to beginning of line
+* **d** e.g. dw is delete word
 * **x** delete character (equal do dl)
-* **u** to undo, <C-r> to redo
-* visual mode + manipulation select text, d to delete it or c to change it copying block also works
-* **/** will search a word example /find will find a word 'find'
+* **u** to undo, ctrl r to redo
+* visual mode plus manipulation select text, d to delete it or c to change it copying block also works
+* **/** will search a word example / find will find a word 'find'
 * **.** repeats the last editing word that was used.
-* :sp and :vsp for split window of same file
-* <ctrl w> to move between split windows
+* : sp and : vsp for split window of same file
+* ctrl w to move between split windows
 
 You can combine commands with a count, which will perform a given action a number of times. 4k will move (4 time k) that is move right 4 times.
 
