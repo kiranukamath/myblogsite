@@ -13,7 +13,7 @@ class IndexPage extends React.Component {
       <Layout location={this.props.location} title={siteTitle}>
         <SEO
           title="Kiran U Kamath"
-          keywords={[`Kiran U Kamath`, `machinelearning`, `javascript`, `react`]}
+          keywords={[`Kiran U Kamath`, `machine learning`, `deep learning`, `artificial intelligence`, `nodejs`, `javascript`, `gatsby`, `react`]}
         />
         {/*<img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />*/}
         <Link to="/blog/">
