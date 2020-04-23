@@ -1,7 +1,7 @@
 ---
 path: Image classification fastai
 date: 2020-02-12T02:17:43.775Z
-title: Image Classification fast.ai L1 part1
+title: Dog vs cat breed classifier.
 description: my journey in fast.ai course
 ---
 In this Notebook I want to document my journey in fast.ai course.
@@ -400,4 +400,4 @@ learn.save('stage-1')
 
 We got accuracy of 94% which is just 6% error with just few lines of code, when compared to state of art model in 2012 paper which had 56% accuracy.
 
-To see python jupyter notebook [click here](https://github.com/kirankamatmgm/Deeplearning/blob/master/Image_Classification_fastai(L1).ipynb)
+To see python jupyter notebook [click here](https://github.com/kirankamatmgm/DogandCatBreed_Classifier/blob/master/Image_Classification_fastai.ipynb)
