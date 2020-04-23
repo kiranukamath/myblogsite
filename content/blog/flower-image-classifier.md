@@ -76,6 +76,92 @@ df.index=df.Img
 df.head()
 ```
 
+
+
+<table border="1" class="dataframe">
+
+<thead>
+
+\    <tr style="text-align: right;">
+
+\    <th></th>
+
+\    <th>Img</th>
+
+\    <th>Class</th>
+
+\    </tr>
+
+\    <tr>
+
+\    <th>Img</th>
+
+\    <th></th>
+
+\    <th></th>
+
+\    </tr>
+
+  </thead>
+
+  <tbody>
+
+\    <tr>
+
+\    <th>jpg/image_03860.jpg</th>
+
+\    <td>jpg/image_03860.jpg</td>
+
+\    <td>16</td>
+
+\    </tr>
+
+\    <tr>
+
+\    <th>jpg/image_06092.jpg</th>
+
+\    <td>jpg/image_06092.jpg</td>
+
+\    <td>13</td>
+
+\    </tr>
+
+\    <tr>
+
+\    <th>jpg/image_02400.jpg</th>
+
+\    <td>jpg/image_02400.jpg</td>
+
+\    <td>42</td>
+
+\    </tr>
+
+\    <tr>
+
+\    <th>jpg/image_02852.jpg</th>
+
+\    <td>jpg/image_02852.jpg</td>
+
+\    <td>55</td>
+
+\    </tr>
+
+\    <tr>
+
+\    <th>jpg/image_07710.jpg</th>
+
+\    <td>jpg/image_07710.jpg</td>
+
+\    <td>96</td>
+
+\    </tr>
+
+  </tbody>
+
+</table>
+
+
+
 ```
 len(trn), len(val), len(tst)
 ```
@@ -360,8 +446,6 @@ learn.recorder.plot()
 ```
 
 ```
-
-
 LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
 ```
 
@@ -1057,8 +1141,6 @@ learn.fit_one_cycle(10,lrs)
 ```
 epoch	train_loss	valid_loss	accuracy	time0	1.384226	0.477209	0.879274	04:341	0.818306	0.230950	0.943475	04:352	0.518546	0.167983	0.956036	04:353	0.387305	0.140578	0.968597	04:364	0.300006	0.115997	0.972087	04:335	0.240830	0.093787	0.981158	04:356	0.187486	0.090038	0.977669	04:377	0.109384	0.084203	0.983252	04:408	0.143494	0.085302	0.981158	04:379	0.151969	0.083969	0.981158	04:33
 ```
-
-
 
 ```
 learn.save('stage-3')
