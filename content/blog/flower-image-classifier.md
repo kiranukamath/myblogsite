@@ -76,66 +76,6 @@ df.index=df.Img
 df.head()
 ```
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-```
-.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-```
-
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Img</th>
-      <th>Class</th>
-    </tr>
-    <tr>
-      <th>Img</th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>jpg/image_03860.jpg</th>
-      <td>jpg/image_03860.jpg</td>
-      <td>16</td>
-    </tr>
-    <tr>
-      <th>jpg/image_06092.jpg</th>
-      <td>jpg/image_06092.jpg</td>
-      <td>13</td>
-    </tr>
-    <tr>
-      <th>jpg/image_02400.jpg</th>
-      <td>jpg/image_02400.jpg</td>
-      <td>42</td>
-    </tr>
-    <tr>
-      <th>jpg/image_02852.jpg</th>
-      <td>jpg/image_02852.jpg</td>
-      <td>55</td>
-    </tr>
-    <tr>
-      <th>jpg/image_07710.jpg</th>
-      <td>jpg/image_07710.jpg</td>
-      <td>96</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 ```
 len(trn), len(val), len(tst)
 ```
@@ -342,61 +282,6 @@ tst[tst.columns[-1]] = tst[tst.columns[-1]].apply(lambda x: codes[x].replace(' '
 trn[:5]
 ```
 
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-```
-.dataframe tbody tr th {
-    vertical-align: top;
-}
-
-.dataframe thead th {
-    text-align: right;
-}
-```
-
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>0</th>
-      <th>1</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>0</th>
-      <td>jpg/image_03860.jpg</td>
-      <td>purple_coneflower</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>jpg/image_06092.jpg</td>
-      <td>spear_thistle</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>jpg/image_02400.jpg</td>
-      <td>sword_lily</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>jpg/image_02852.jpg</td>
-      <td>bishop_of_llandaff</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>jpg/image_07710.jpg</td>
-      <td>mallow</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
 Once confirmed all labels doesnot contain space move forward
 
 ```
@@ -475,56 +360,6 @@ learn.recorder.plot()
 ```
 
 ```
-<div>
-    <style>
-        /* Turns off some styling */
-        progress {
-            /* gets rid of default border in Firefox and Opera. */
-            border: none;
-            /* Needs to be in here for Safari polyfill so background images work as expected. */
-            background-size: auto;
-        }
-        .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-            background: #F44336;
-        }
-    </style>
-  <progress value='0' class='' max='1' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  0.00% [0/1 00:00<00:00]
-</div>
-```
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: left;">
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>accuracy</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table><p>
-
-```
-<div>
-    <style>
-        /* Turns off some styling */
-        progress {
-            /* gets rid of default border in Firefox and Opera. */
-            border: none;
-            /* Needs to be in here for Safari polyfill so background images work as expected. */
-            background-size: auto;
-        }
-        .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-            background: #F44336;
-        }
-    </style>
-  <progress value='88' class='' max='255' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  34.51% [88/255 00:07<00:14 19.5345]
-</div>
-
 
 
 LR Finder is complete, type {learner_name}.recorder.plot() to see the graph.
@@ -539,90 +374,6 @@ lr=3e-3
 ```
 learn.fit_one_cycle(10, slice(lr), pct_start=0.9)
 ```
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: left;">
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>accuracy</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>6.156984</td>
-      <td>4.590524</td>
-      <td>0.046078</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>5.120844</td>
-      <td>3.424721</td>
-      <td>0.224510</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>3.638896</td>
-      <td>2.221143</td>
-      <td>0.484314</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>2.891678</td>
-      <td>1.523283</td>
-      <td>0.636275</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>2.325167</td>
-      <td>1.261948</td>
-      <td>0.686275</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>2.097249</td>
-      <td>1.228347</td>
-      <td>0.677451</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>1.986707</td>
-      <td>1.102566</td>
-      <td>0.711765</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>2.222347</td>
-      <td>1.115762</td>
-      <td>0.701961</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>1.909852</td>
-      <td>0.974875</td>
-      <td>0.743137</td>
-      <td>00:30</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>1.473234</td>
-      <td>0.843119</td>
-      <td>0.775490</td>
-      <td>00:31</td>
-    </tr>
-  </tbody>
-</table>
 
 ```
 learn.save('stage-1')
@@ -931,104 +682,6 @@ lrs= slice(lr/400,lr/4)
 ```
 learn.fit_one_cycle(12,lrs,pct_start=0.8)
 ```
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: left;">
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>accuracy</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>1.334105</td>
-      <td>0.783806</td>
-      <td>0.792157</td>
-      <td>00:32</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>1.233995</td>
-      <td>0.741752</td>
-      <td>0.798039</td>
-      <td>00:32</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>1.197076</td>
-      <td>0.674116</td>
-      <td>0.812745</td>
-      <td>00:33</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>1.094136</td>
-      <td>0.634781</td>
-      <td>0.842157</td>
-      <td>00:33</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>0.956022</td>
-      <td>0.625526</td>
-      <td>0.830392</td>
-      <td>00:34</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>1.114396</td>
-      <td>0.587442</td>
-      <td>0.838235</td>
-      <td>00:33</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>1.179830</td>
-      <td>0.584663</td>
-      <td>0.834314</td>
-      <td>00:33</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>1.264932</td>
-      <td>0.692555</td>
-      <td>0.819608</td>
-      <td>00:32</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>1.135185</td>
-      <td>0.599189</td>
-      <td>0.844118</td>
-      <td>00:33</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>1.128613</td>
-      <td>0.652868</td>
-      <td>0.841176</td>
-      <td>00:33</td>
-    </tr>
-    <tr>
-      <td>10</td>
-      <td>0.912592</td>
-      <td>0.492324</td>
-      <td>0.881373</td>
-      <td>00:33</td>
-    </tr>
-    <tr>
-      <td>11</td>
-      <td>0.690878</td>
-      <td>0.493381</td>
-      <td>0.873529</td>
-      <td>00:33</td>
-    </tr>
-  </tbody>
-</table>
 
 ```
 learn.save('stage-2')
@@ -1381,58 +1034,6 @@ learn.unfreeze()
 ```
 lr_find(learn)
 learn.recorder.plot()
-```
-
-```
-<div>
-    <style>
-        /* Turns off some styling */
-        progress {
-            /* gets rid of default border in Firefox and Opera. */
-            border: none;
-            /* Needs to be in here for Safari polyfill so background images work as expected. */
-            background-size: auto;
-        }
-        .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-            background: #F44336;
-        }
-    </style>
-  <progress value='0' class='' max='1' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  0.00% [0/1 00:00<00:00]
-</div>
-```
-
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: left;">
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>accuracy</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-  </tbody>
-</table><p>
-
-```
-<div>
-    <style>
-        /* Turns off some styling */
-        progress {
-            /* gets rid of default border in Firefox and Opera. */
-            border: none;
-            /* Needs to be in here for Safari polyfill so background images work as expected. */
-            background-size: auto;
-        }
-        .progress-bar-interrupted, .progress-bar-interrupted::-webkit-progress-bar {
-            background: #F44336;
-        }
-    </style>
-  <progress value='81' class='' max='717' style='width:300px; height:20px; vertical-align: middle;'></progress>
-  11.30% [81/717 00:30<04:01 6.5168]
-</div>
 
 
 
@@ -1453,89 +1054,11 @@ lrs=slice(1e-5,lr/10)
 learn.fit_one_cycle(10,lrs)
 ```
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: left;">
-      <th>epoch</th>
-      <th>train_loss</th>
-      <th>valid_loss</th>
-      <th>accuracy</th>
-      <th>time</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>0</td>
-      <td>1.384226</td>
-      <td>0.477209</td>
-      <td>0.879274</td>
-      <td>04:34</td>
-    </tr>
-    <tr>
-      <td>1</td>
-      <td>0.818306</td>
-      <td>0.230950</td>
-      <td>0.943475</td>
-      <td>04:35</td>
-    </tr>
-    <tr>
-      <td>2</td>
-      <td>0.518546</td>
-      <td>0.167983</td>
-      <td>0.956036</td>
-      <td>04:35</td>
-    </tr>
-    <tr>
-      <td>3</td>
-      <td>0.387305</td>
-      <td>0.140578</td>
-      <td>0.968597</td>
-      <td>04:36</td>
-    </tr>
-    <tr>
-      <td>4</td>
-      <td>0.300006</td>
-      <td>0.115997</td>
-      <td>0.972087</td>
-      <td>04:33</td>
-    </tr>
-    <tr>
-      <td>5</td>
-      <td>0.240830</td>
-      <td>0.093787</td>
-      <td>0.981158</td>
-      <td>04:35</td>
-    </tr>
-    <tr>
-      <td>6</td>
-      <td>0.187486</td>
-      <td>0.090038</td>
-      <td>0.977669</td>
-      <td>04:37</td>
-    </tr>
-    <tr>
-      <td>7</td>
-      <td>0.109384</td>
-      <td>0.084203</td>
-      <td>0.983252</td>
-      <td>04:40</td>
-    </tr>
-    <tr>
-      <td>8</td>
-      <td>0.143494</td>
-      <td>0.085302</td>
-      <td>0.981158</td>
-      <td>04:37</td>
-    </tr>
-    <tr>
-      <td>9</td>
-      <td>0.151969</td>
-      <td>0.083969</td>
-      <td>0.981158</td>
-      <td>04:33</td>
-    </tr>
-  </tbody>
-</table>
+```
+epoch	train_loss	valid_loss	accuracy	time0	1.384226	0.477209	0.879274	04:341	0.818306	0.230950	0.943475	04:352	0.518546	0.167983	0.956036	04:353	0.387305	0.140578	0.968597	04:364	0.300006	0.115997	0.972087	04:335	0.240830	0.093787	0.981158	04:356	0.187486	0.090038	0.977669	04:377	0.109384	0.084203	0.983252	04:408	0.143494	0.085302	0.981158	04:379	0.151969	0.083969	0.981158	04:33
+```
+
+
 
 ```
 learn.save('stage-3')
