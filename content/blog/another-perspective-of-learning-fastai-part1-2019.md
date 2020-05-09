@@ -1,12 +1,14 @@
 ---
 path: My way of learning fastai part1
 date: 2020-05-08T14:27:41.037Z
-title: Another perspective of learning fastai part1(2019)
-description: My perspective of learning fastai part1(2019)
+title: Another perspective of learning fastai part1
+description: My perspective of learning fastai part1
 ---
 ## This is still draft(not yet developed feature to draft so posted)
 
 # 1. My experience with fastai #
+
+My experience is with fastai course part1 2019
 
 My **glimpses** of fastai courses come 1 year ago, when friend suggested me fastai course telling you would really fast get into deep learning. I first went through lesson 1 and everything went out of head. Because I was used to university bottom up approach and went to learn how every line of code works in first attempt. 
 Then I left that fastai course and started to learn from other coursera courses. Until 3 months back when I wanted to build some working model on my own I couldn't. Then I realized may be top down approach suites me better than bottom up. And once again luckly I saw fastai course and started to learn from Jeremy's videos.
