@@ -2,7 +2,7 @@
 path: My way of learning fastai part1
 date: 2020-05-08T14:27:41.037Z
 title: Another perspective of learning fastai part1
-description: My perspective of learning fastai part1
+description: This is **Draft** My perspective of learning fastai part1
 ---
 ## This is still draft(not yet developed feature to draft so posted)
 
