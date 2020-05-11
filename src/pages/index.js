@@ -27,15 +27,20 @@ class IndexPage extends React.Component {
         </h1>
         <p>Welcome to my Personal Website</p>
         <p>
-          I am currently pursuing Information science and Engineering in NIE mysore. Interested in machine learing. Also interested in react,nodejs,gatsby and everything interesting in javascript.
+          I am currently pursuing Information science and Engineering in NIE mysore. Interested in machine learing.
+        To look at my projects check <a href="https://github.com/kirankamatmgm">Github</a>
         </p><br />
         <p>You can contact me through<br />
           email: kirankamat.mgm@gmail.com<br />
           or follow me on &nbsp;
-          <a href="https://twitter.com/UKamath7">Twitter</a> &nbsp; <a href="https://www.linkedin.com/in/kiran-u-kamath/">Linkedin</a>
-
         </p>
-        
+
+
+        <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="kiran-u-kamath"><a class="LI-simple-link" href='https://in.linkedin.com/in/kiran-u-kamath?trk=profile-badge'>Kiran U Kamath</a></div><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
+
+
+        <a class="twitter-timeline" href="https://twitter.com/UKamath7?ref_src=twsrc%5Etfw">Tweets by UKamath7</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
       </Layout>
     )
   }
