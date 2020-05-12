@@ -36,6 +36,8 @@ class IndexPage extends React.Component {
         </p>
 
 
+        <a class="github-button" href="https://github.com/kirankamatmgm" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" aria-label="Follow @kirankamatmgm on GitHub">Follow @kirankamatmgm</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+
         <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="kiran-u-kamath"><a class="LI-simple-link" href='https://in.linkedin.com/in/kiran-u-kamath?trk=profile-badge'>Kiran U Kamath</a></div><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 
