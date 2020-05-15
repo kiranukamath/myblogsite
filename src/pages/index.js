@@ -28,7 +28,7 @@ class IndexPage extends React.Component {
         <p>Welcome to my Personal Website</p>
         <p>
           I am currently pursuing Information science and Engineering in NIE mysore. Interested in machine learing.
-        To look at my projects check <br> <a class="github-button" href="https://github.com/kirankamatmgm" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Follow @kirankamatmgm on GitHub">Follow @kirankamatmgm</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+        To look at my projects check <a class="github-button" href="https://github.com/kirankamatmgm" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Follow @kirankamatmgm on GitHub">Follow @kirankamatmgm</a><script async defer src="https://buttons.github.io/buttons.js"></script>
         </p><br />
         <p>You can contact me through<br />
           email: kirankamat.mgm@gmail.com<br />
