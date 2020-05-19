@@ -19,6 +19,7 @@ class IndexPage extends React.Component {
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
+        <a href='https://kirankamath.netlify.app/blog/projects/'><button>Link To freeCodeCamp</button></a>
         <h1>
           Hello World{" "}
           <span role="img" aria-label="wave emoji">
