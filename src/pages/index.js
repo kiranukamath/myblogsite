@@ -19,7 +19,6 @@ class IndexPage extends React.Component {
         <Link to="/blog/">
           <Button marginTop="35px">Go to Blog</Button>
         </Link>
-        <a href='https://kirankamath.netlify.app/blog/projects/'><button>Link To freeCodeCamp</button></a>
         <h1>
           Hello World{" "}
           <span role="img" aria-label="wave emoji">
@@ -29,7 +28,7 @@ class IndexPage extends React.Component {
         <p>Welcome to my Personal Website</p>
         <p>
           I am currently pursuing Information science and Engineering in NIE mysore. Interested in machine learing.
-        To look at my projects check <a class="github-button" href="https://github.com/kirankamatmgm" data-color-scheme="no-preference: dark; light: dark; dark: dark;" data-size="large" aria-label="Follow @kirankamatmgm on GitHub">Follow @kirankamatmgm</a><script async defer src="https://buttons.github.io/buttons.js"></script>
+        To look at my projects check <a href='https://kirankamath.netlify.app/blog/projects/'><Button marginTop="35px">Projects</Button></a>
         </p><br />
         <p>You can contact me through<br />
           email: kirankamat.mgm@gmail.com<br />
