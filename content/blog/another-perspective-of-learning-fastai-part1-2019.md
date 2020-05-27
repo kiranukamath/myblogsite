@@ -6,6 +6,8 @@ description: This is **Draft** My perspective of learning fastai part1
 ---
 ## This is still draft(not yet developed feature to draft so posted)
 
+#Blog9
+
 # 1. My experience with fastai #
 
 My experience is with fastai course part1 2019
