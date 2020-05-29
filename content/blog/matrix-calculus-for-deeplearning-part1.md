@@ -68,41 +68,28 @@ The Jacobian of the identity function **f**(**x**) = **x**, with fi (**x**) = x 
 
 Element wise operations are important to know in deep learning. By Element-wise binary operations we simply mean applying an operator to the first item of each vector to get the first item of the output, then to the second items of the inputs for the second item of the output, and so forth. We can generalize the element-wise binary operations with notation y = f (w) O g(x) where m = n = |y| = |w| = |x|
 
-
-
 ![element wise](/assets/blog9img3.png)
-
-
 
 ## Derivatives involving scalar expansion
 
-When we multiply or add scalars to vectors, we're implicitly expanding the scalar to a vector and then performing an element-wise binary operation. For example, adding scalar z to vector x,
+When we multiply or add scalars to vectors, we're implicitly expanding the scalar to a vector and then performing an element-wise binary operation. For example
 
 ![scalar expansion](/assets/blog9img4.png)
 
-
-
-y = x + z, is really y = f (x) + g(z) where f (x) = x and g(z) = \~ 1z. (The notation \~ 1 represents
-
-a vector of ones of appropriate length.) z is any scalar that doesn't depend on x, which is useful
-
-∂z
-
-because then ∂x
-
-\= 0 for any x i and that will simplify our partial derivative computations
-
-
+(The notation -> 1 represents a vector of ones of appropriate length.) z is any scalar that doesn't depend on **x**, which is useful because then  ∂z/∂x= 0 for any x i and that will simplify our partial derivative computations
 
 ## Vector sum reduction
+
+Summing up the elements of a vector is an important operation in deep learning, such as the network loss function.  
+Let y = sum(**f** (**x**)) . Notice we were careful here to leave the parameter as a vector **x** because each function f i could use all values in the vector, not just x i . The sum is over the results of the function and not the parameter. 
 
 
 
 ![vector sum](/assets/blog9img5.png)
 
-Summing up the elements of a vector is an important operation in deep learning, such as the
+In gradient of the simple y = sum(**x**)= \[1,1 ....1]. Because ∂x i/ ∂x j = 0 for j != i. Transpose because we have assumed default as vertical vectors. It’s very important to keep the shape of all of your vectors and matrices in order otherwise it’s impossible to compute the derivatives of complex functions.
 
-network loss function
+
 
 **Blog 9**
 
