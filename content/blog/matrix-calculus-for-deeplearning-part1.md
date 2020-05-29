@@ -6,6 +6,8 @@ description: >-
   In this blog I am explaining scalar derivative rules, vector calculus, partial
   derivatives, Jacobian matrix, element wise operation,vector sum reduction.
 ---
+![background](/assets/blog9img0.jpg "Image by Peggy und Marco Lachmann-Anke from Pixabay")
+
 Credits: Based on Paper [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/index.html) by Terence Parr and Jeremy Howard. Thanks for this paper.
 
 The paper is beginner-friendly, but I wanted to write this blog to note down points which would make it easier to understand the paper much better. As we learn some topics which are slightly difficult, we find it to explain to a beginner, in a way we learnt, who may not know anything in that field, so this blog is for beginner.
@@ -91,7 +93,7 @@ In gradient of the simple y = sum(**x**)= \[1,1 ....1]. Because ∂x i/ ∂x j =
 **\#Blog 9**
 
 Links that helped me:
-Paper [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/index.html) by Terence Parr and Jeremy Howard.  
+Paper [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/index.html) by Terence Parr and Jeremy Howard.\
 Blog by [Nikhil B](https://towardsdatascience.com/notes-on-matrix-calculus-for-deep-learning-b9899effa7cf) 
 
 This is **part 1** of the blog, In blog 2, I will explain chain rule.
