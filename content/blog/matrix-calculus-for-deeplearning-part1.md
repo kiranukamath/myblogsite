@@ -4,17 +4,18 @@ date: 2020-05-29T09:24:39.082Z
 title: Matrix Calculus for DeepLearning (Part1)
 description: >-
   In this blog I am explaining scalar derivative rules, vector calculus, partial
-  derivatives, Jacobian matrix, element wise operation.
+  derivatives, Jacobian matrix, element wise operation,vector sum reduction.
 ---
-Credits: Based on Paper [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/index.html) by Terence Parr and Jeremy Howard.
+Credits: Based on Paper [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/index.html) by Terence Parr and Jeremy Howard. Thanks for this paper.
 
-The paper is beginner-friendly, but I wanted to write this blog to note down points which would make it easier to understand the paper much better. As we learn some topics which are slightly difficult, we find it to explain to a beginner, in a way we learnt, who may not know anything in that field, so this blog is for beginner, assuming the only prerequisite is Interest to learn.
+The paper is beginner-friendly, but I wanted to write this blog to note down points which would make it easier to understand the paper much better. As we learn some topics which are slightly difficult, we find it to explain to a beginner, in a way we learnt, who may not know anything in that field, so this blog is for beginner.
 
-Deep Learning is all about linear algebra and calculus. If you try to read any deep learning paper, matrics calculus is a needed component to understanding the concept. May be word _need_ may not be the right word to use, since Jeremy's courses show how to become a world-class deep learning practitioner with only a minimal level of calculus, check [fast.ai](https://course.fast.ai/) for courses.
+Deep Learning is all about linear algebra and calculus. If you try to read any deep learning paper, matrics calculus is a needed component to understanding the concept. May be word _need_ may not be the right word to use, since Jeremy's courses show how to become a world-class deep learning practitioner with only a minimal level of calculus,\
+ check [fast.ai](https://course.fast.ai/) for courses.
 
 I have written my understanding of paper in form of three blogs. This is part1 and check this website for two more parts.
 
-Deep learning is the basically use of neural networks with many layers. what does each neuron do??
+Deep learning is the basically use of neurons with many layers. what does each neuron do??
 
 ## Introduction
 
@@ -80,21 +81,17 @@ When we multiply or add scalars to vectors, we're implicitly expanding the scala
 
 ## Vector sum reduction
 
-Summing up the elements of a vector is an important operation in deep learning, such as the network loss function.  
+Summing up the elements of a vector is an important operation in deep learning, such as the network loss function.\
 Let y = sum(**f** (**x**)) . Notice we were careful here to leave the parameter as a vector **x** because each function f i could use all values in the vector, not just x i . The sum is over the results of the function and not the parameter. 
-
-
 
 ![vector sum](/assets/blog9img5.png)
 
 In gradient of the simple y = sum(**x**)= \[1,1 ....1]. Because ∂x i/ ∂x j = 0 for j != i. Transpose because we have assumed default as vertical vectors. It’s very important to keep the shape of all of your vectors and matrices in order otherwise it’s impossible to compute the derivatives of complex functions.
 
-
-
-**Blog 9**
+**\#Blog 9**
 
 Links that helped me:
-
+Paper [The Matrix Calculus You Need For Deep Learning](https://explained.ai/matrix-calculus/index.html) by Terence Parr and Jeremy Howard.  
 Blog by [Nikhil B](https://towardsdatascience.com/notes-on-matrix-calculus-for-deep-learning-b9899effa7cf) 
 
 This is **part 1** of the blog, In blog 2, I will explain chain rule.
