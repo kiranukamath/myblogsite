@@ -6,9 +6,11 @@ description: This is **Draft** My perspective of learning fastai part1
 ---
 ## This is still draft(not yet developed feature to draft so posted)
 
-#Blog9
+\#Blog9
 
-# 1. My experience with fastai #
+hee
+
+# 1. My experience with fastai
 
 My experience is with fastai course part1 2019
 
@@ -19,7 +21,7 @@ Since I had experience of going through boring, in depth, theoratical, not so us
 
 Then I went through forum and every blog to know how to complete fastai course. Then I finally realized the way to complete and understand fastai course is just complete the way Jeremy tell to do it. Haha, I know this seems confusing, but let me explain. When Jeremy tells we will learn in further lessons means just that, dont break your head on that concept and you will understand in future lessons. You surely wont understand in first attempt but after watching it after 4 to 5 times, may be you will. But we are all so stuck that we usually want to learn every line of code(which is not bad, but didnt work for me), we just forget to listen to Jeremy's words. So the best way to complete course is to surender your mind to Jeremy and listen every word what he tells, and just follow it.
 
-# 2. My Perspective #
+# 2. My Perspective
 
 Recently I had a new perspective of fastai course....
 (epoches,learning rate, momentum, fitonecycle, cnn_learner, pytorch(from forum))
