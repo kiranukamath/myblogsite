@@ -45,13 +45,47 @@ we move to total derivatives.
 
 which is to compute (dy/dx) , we need to sum up all possible contributions from changes in x to the change in y. 
 
+Formula for total derivative chain rule
+
+![total derivative formula](/assets/blog10img2.png)
+
+Total derivative assumes all variables are potentially co-dependent where as partial derivative assumes all variables but _x_ are constants.
+
+when you take the total derivative with respect to x, other variables might also be functions of _x_ so add in their contributions as well. The left side of the equation looks like a typical partial derivative but the right-hand side is actually the total derivative.
+
+Lets see example,
+
+![total derivative example](/assets/blog10img3.png)
+
+total derivative formula always _sums_, that is sums up terms in the derivative. For example, given y = x × x² instead of y = x + x² , the total-derivative chain rule formula still adds partial derivative terms, for more detail see demonstration in paper.
+
+Formula of total derivative can be simplified further.
+
+![formula simplification](/assets/blog10img4.png)
+
+This chain rule that takes into consideration the total derivative degenerates to the single-variable chain rule when all intermediate variables are functions of a single variable.
+
+## Vector chain rule
+
+derivative of a sample vector function with respect to a scalar, **y** = **f** (x).
+
+![vector 1](/assets/blog10img5.jpg)
+
+introduce two intermediate variables, g 1 and g 2 , one for each f i so that y looks more like **y** = **f** (**g**(x))
+
+![vector2](/assets/blog10img6.jpg)
+
+If we split the terms, isolating the terms into a vector, we get a matrix by vector.
+
+![vector3](/assets/blog10img7.jpg)
+
+This completes chain rule. In next blog that is part3 we will see how we can apply this gradient of neural activation and loss function and wrap up.
+
+Thank you.
 
 
 
-
-
-
-Useful links:
+Useful Points:
 
 It is difficult while writing blog in markdown to convert to superscript and subscript so I have listed down , which you can use ( copy paste) in your markdown
 
