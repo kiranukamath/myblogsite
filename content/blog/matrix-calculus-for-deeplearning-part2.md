@@ -1,5 +1,5 @@
 ---
-path: Matrix Calculus
+path: Matrix Calculus Part2
 date: 2020-05-29T15:20:20.957Z
 title: Matrix Calculus for DeepLearning (Part2)
 description: 'this is 2nd part of blog, chain rule.'
