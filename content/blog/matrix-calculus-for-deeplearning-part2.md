@@ -4,6 +4,8 @@ date: 2020-05-29T15:20:20.957Z
 title: Matrix Calculus for DeepLearning (Part2)
 description: 'this is 2nd part of blog, chain rule.'
 ---
+![Image by analogicus from Pixabay](/assets/blog10img0.jpg)
+
 We can’t compute partial derivatives of very complicated functions using just the basic matrix calculus rules we’ve seen [Blog part 1](https://kirankamath.netlify.app/blog/matrix-calculus-for-deeplearning-part1/). For example, we can’t take the derivative of nested expressions like sum(**w** + **x**) directly without reducing it to its scalar equivalent. We need to be able to combine our basic vector rules using the vector chain rule. 
 
 In paper they have defined and named three different chain rules.
@@ -82,8 +84,6 @@ If we split the terms, isolating the terms into a vector, we get a matrix by vec
 This completes chain rule. In next blog that is part3 we will see how we can apply this gradient of neural activation and loss function and wrap up.
 
 Thank you.
-
-
 
 Useful Points:
 
