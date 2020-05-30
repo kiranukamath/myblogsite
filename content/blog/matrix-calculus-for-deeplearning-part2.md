@@ -15,3 +15,7 @@ In paper they have defined and named three different chain rules.
 The chain rule comes into play when we need the derivative of an expression composed of nested subexpressions. Chain rule helps in solving problem by breaking complicated expressions into subexpression whose derivatives are easy to compute. 
 
 ## Single-variable chain rule
+
+
+
+\# **Blog 10**
