@@ -6,6 +6,8 @@ description: >-
   This is last part of blog, which explains The gradient of the neural network
   activation and loss function, and winds up blog
 ---
+![Image by David Zydd from Pixabay](/assets/blog11img0.png)
+
 We have looked into Jacobian matrix, element wise operation, derivatives involving single expressions and vector sum reduction and chain rule in previous blog. Please through that, [Blog 1](https://kirankamath.netlify.app/blog/matrix-calculus-for-deeplearning-part1/), [Blog 2](https://kirankamath.netlify.app/blog/matrix-calculus-for-deeplearning-part2/). 
 
 ## The gradient of neuron activation
@@ -14,9 +16,9 @@ Let us compute the derivative of a typical neuron activation for a single neural
 
 _activation_(**x**) = max(0, **w** . **x** + b)
 
-This represents neuron with fully connected weights and relu.  
-Let us compute derivative of  ( **w** . **x** + b ) wrt **w** and b  
-dot product **w . x** is summation of element wise multiplication of elements.  
+This represents neuron with fully connected weights and relu.\
+Let us compute derivative of  ( **w** . **x** + b ) wrt **w** and b\
+dot product **w . x** is summation of element wise multiplication of elements.\
 Partial derivative of sum(**w** ⊗ **x**) can be calculated using chain rule using intermediate vector variable
 
 ![activation](/assets/blog11img1.png)
@@ -37,8 +39,8 @@ Let X = \[x 1 , x 2 , . . . , xN ] T  (T means transpose)
 
 If the error is 0, then the gradient is zero and we have arrived at the minimum loss. If ei is some small positive difference, the gradient is a small step in the direction of x . If e 1 is large, the gradient is a large step in that direction. we want to reduce, not increase, the loss, which is why the gradient descent recurrence relation takes the negative of the gradient to update the current position.
 
-Look at things like the shape of a vector (long or tall), is the variable scalar or vector, the dimensions of a matrix. Vectors are represented by bold letters  
-After reading this blog please read paper, to get more understanding.  
+Look at things like the shape of a vector (long or tall), is the variable scalar or vector, the dimensions of a matrix. Vectors are represented by bold letters\
+After reading this blog please read paper, to get more understanding.\
 Paper has unique way of explaining concepts, that is from simple to complex. when we reach the end of paper, we would solve ourself, because difficult expressions can be solved, since we have deep understanding of simple expressions. 
 
 First, we start with functions of simple parameters represented by f(x). Second,we move to functions of the form f(x,y,z). To calculate the derivatives of such functions, we use partial derivatives which are calculated with respect to specific parameters. Thirdly we move to scalar function of a vector of input parameters as f(**x**), wherein the partial derivatives of f(**x**) are represented as vectors. Lastly, we see **f**(**x**) to represent a set of scalar functions of the form f(**x**).
