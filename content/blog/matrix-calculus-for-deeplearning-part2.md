@@ -81,6 +81,10 @@ If we split the terms, isolating the terms into a vector, we get a matrix by vec
 
 ![vector3](/assets/blog10img7.jpg)
 
+The vector chain rule is the general form as it degenerates to the others. When f is a function of a single variable x and all intermediate variables u are functions of a single variable, the single-variable chain rule applies. When some or all of the intermediate variables are functions of multiple variables, the single-variable total-derivative chain rule applies. In all other cases, the vector chain rule applies
+
+
+
 This completes chain rule. In next blog that is part3 we will see how we can apply this gradient of neural activation and loss function and wrap up.
 
 Thank you.
