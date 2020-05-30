@@ -20,12 +20,14 @@ Let us compute derivative of  ( **w** . **x** + b ) wrt **w** and b
 
 dot product **w . x** is summation of element wise multiplication of elements. Partial derivative of sum(**w** ⊗ **x**) can be calculated using chain rule using intermediate vector variable
 
-**u** = **w ⊗ x**
+![activation](/assets/blog11img1.png)
 
-y = sum(**u**)
+The above image use of the max(0, z) function call on scalar z just says to treat all negative z values as 0. The derivative of the max function is a piecewise function. When z ≤ 0, the derivative is 0 because z is a constant. When z > 0, the derivative of the max function is just the derivative of z, which is 1.
 
-Image wriiten
-
-
+When the activation function clips affine function output z to 0, the derivative is zero with respect to any weight w i . When z > 0, it’s as if the max function disappears and we get just the derivative of z with respect to the weights.
 
 ## The gradient of the neural network loss function
+
+
+
+\# **Blog 11**
