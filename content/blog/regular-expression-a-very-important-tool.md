@@ -12,6 +12,8 @@ check [fastai v2 ](https://dev.fast.ai/)
 
 ## Medium post
 
+Regular expression is a sequence of characters mainly used to find and replace patterns in a string or file.
+
 Lets discuss problem that can be solved using regular expression. (example is from fastai course)
 
 Usually label is stored in file name, so it you can extract it and use as label. 
@@ -43,9 +45,9 @@ _ is underscore appearing before numbers
 
 forward slash at the beginning is to tell our search ends when we hit forward slash.
 
-**/(\[^/]+)_\d+.jpg$** gives us label we want i.e \*\*\*\*`american_bulldog`in our example.
+**/(\[^/]+)_\d+.jpg$** gives us label we want i.e `american_bulldog` in our example.
 
-python code
+`python code`
 
 ```
 string = 'data/oxford-iiit-pet/images/american_bulldog_146.jpg'  
@@ -56,7 +58,7 @@ print(pat.search(string).group(1))
 >american_bulldog
 ```
 
-Regular expression
+Important Regular expression cheat sheet:
 
 ```
 ^ Start of string
