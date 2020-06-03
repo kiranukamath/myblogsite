@@ -10,40 +10,39 @@ Credits: fastai ( Jeremy says regular expression is important tool to consider l
 
 check [fastai v2 ](https://dev.fast.ai/) 
 
-## Medium post
-
 Regular expression is a sequence of characters mainly used to find and replace patterns in a string or file.
 
 Lets discuss problem that can be solved using regular expression. (example is from fastai course)
 
-Usually label is stored in file name, so it you can extract it and use as label. 
+While solving Deep Learning problems, we have dataset and there may be times when label is stored in file name. So that we will have path and need to extract label from it. Or there may be situation you need to extract information from website. In these or many situation like these regular expression is important tool.
 
-Example for file name
+Lets get with easy example first. 
+
+Think like you have document and you want to search names of all people with first name 'Kiran' and any last name, how to do it?? here regular expressions comes into play.
+
+regular expression: '**Kiran\s\w+\s'**
+
+Here \s means a space and \w means character + means 1 or more characters.
+
+Lets see example where label is in file name path:
 
 `data/oxford-iiit-pet/images/american_bulldog_146.jpg  
 data/oxford-iiit-pet/images/german_shorthaired_137.jpg`
 
 But how to extract it???
 
-here regular comes into play, 
-
- Writing regular expression is similar the way we approach the problem. seeing the example above we can tell that label is found after last forward slash(/) and after label we have number and ending with `.jpg`
+Writing regular expression is similar the way we approach the problem. seeing the example above we can tell that label is found after last forward slash(/) and after label we have number and ending with `.jpg`
 
 Regular expression is **/(\[^/]+)_\d+.jpg$**
 
 I'll explain step by step.
 
-$ means end of text we are interpreting
-
-.**jpg** is make sure that just before end of text we have jpg that is of right format.
-
-\d means numeric digits and + means many digits.
-
-_ is underscore appearing before numbers
-
-(\[^/]+) is for looking a group of characters that do not contain forward slash, and \[ ] means character we are interested. '^' is negation.
-
-forward slash at the beginning is to tell our search ends when we hit forward slash.
+**$** means end of text we are interpreting\
+.**jpg** is make sure that just before end of text we have jpg that is of right format.\
+**\d** means numeric digits and + means many digits.\
+**_** is underscore appearing before numbers\
+**(\[^/]+)** is for looking a group of characters that do not contain forward slash, and \[ ] means character we are interested. '**^**' is negation.\
+**forward slash** at the beginning is to tell our search ends when we hit forward slash.
 
 **/(\[^/]+)_\d+.jpg$** gives us label we want i.e `american_bulldog` in our example.
 
@@ -105,6 +104,3 @@ $ End of string
 
 \[0-7] Digit from 0 to 7
 ```
-
-kk
-kk
