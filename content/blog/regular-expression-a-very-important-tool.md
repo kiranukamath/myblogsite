@@ -104,3 +104,9 @@ $ End of string
 
 \[0-7] Digit from 0 to 7
 ```
+
+
+
+I have explained regular expression with just two example but the purpose was to introduce you to regular expression and what it can do. This blog is written to introduce you to power of regular expressions. Regular expression if learnt how to use, can be important tool in your data science tool-box. 
+
+Thank you for reading blog.
