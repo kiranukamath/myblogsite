@@ -7,24 +7,21 @@ description: >-
   estimates for a dataset of lymphoma patients. This is Survival estimates that
   vary with time.
 ---
-
-
-
 <a href="https://colab.research.google.com/github/kirankamatmgm/Surivival-estimates-of-lymphoma-patients/blob/master/Surivival_estimates_of_lymphoma_patients.ipynb" target="_parent"><img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/></a>
 
-
-
 ### Project is based on knowledge of
-- Censored Data
-- Kaplan-Meier Estimates
+
+* Censored Data
+* Kaplan-Meier Estimates
 
 <a name='1'></a>
+
 ## 1. Import Packages
 
-- `lifelines` is an open-source library for data analysis.
-- `numpy` is the fundamental package for scientific computing in python.
-- `pandas` is what we'll use to manipulate our data.
-- `matplotlib` is a plotting library.
+* `lifelines` is an open-source library for data analysis.
+* `numpy` is the fundamental package for scientific computing in python.
+* `pandas` is what we'll use to manipulate our data.
+* `matplotlib` is a plotting library.
 
 ```python
 import lifelines
@@ -37,8 +34,8 @@ from lifelines.statistics import logrank_test
 ```
 
 <a name='2'></a>
-## 2. Load the Dataset
 
+## 2. Load the Dataset
 
 ```python
 from lifelines.datasets import load_lymphoma
@@ -61,8 +58,9 @@ print("data shape: {}".format(data.shape))
 data.head()
 ```
 
-    data shape: (80, 3)
-
+```
+data shape: (80, 3)
+```
 
 <table border="1">
   <thead>
@@ -107,9 +105,6 @@ data.head()
   </tbody>
 </table>
 
-
-
-
 The column `Time` states how long the patient lived before they died or were censored.
 
 The column `Event` says whether a death was observed or not. `Event` is 1 if the event is observed (i.e. the patient died) and 0 if data was censored.
@@ -118,6 +113,7 @@ Censorship here means that the observation has ended without any observed event.
 For example, let a patient be in a hospital for 100 days at most. If a patient dies after only 44 days, their event will be recorded as `Time = 44` and `Event = 1`. If a patient walks out after 100 days and dies 3 days later (103 days total), this event is not observed in our process and the corresponding row has `Time = 100` and `Event = 0`. If a patient survives for 25 years after being admitted, their data for are still `Time = 100` and `Event = 0`.
 
 <a name='3'></a>
+
 ## 3. Censored Data
 
 plot a histogram of the survival times to see in general how long cases survived before censorship or events.
@@ -128,9 +124,7 @@ plt.xlabel("Observation time before death or censorship (days)");
 plt.ylabel("Frequency (number of patients)");
 ```
 
-
 ![png](/assets/output_11_0.png)
-
 
 ```python
 def frac_censored(df):
@@ -155,8 +149,9 @@ def frac_censored(df):
 print(frac_censored(data))
 ```
 
-    0.325
-
+```
+0.325
+```
 
 see the distributions of survival times for censored and uncensored examples.
 
@@ -177,32 +172,25 @@ plt.ylabel("Frequency")
 plt.show()
 ```
 
-
 ![png](/assets/output_15_0.png)
-
-
 
 ![png](/assets/output_15_1.png)
 
-
 <a name='4'></a>
+
 ## 4. Survival Estimates
 
 estimate the survival function:
 
-
 S(t) = P(T > t)
-
 
 we'll start with a naive estimator of the above survival function. To estimate this quantity, we'll divide the number of people who we know lived past time $t$ by the number of people who were not censored before $t$.
 
-Formally, let $i$ = 1, ..., $n$ be the cases, and let $t_i$ be the time when $i$ was censored or an event happened. Let $e_i= 1$ if an event was observed for $i$ and 0 otherwise. Then let $X_t = \{i : T_i > t\}$, and let $M_t = \{i : e_i = 1 \text{ or } T_i > t\}$. The estimator you will compute will be:
+Formally, let $i$ = 1, ..., $n$ be the cases, and let $t_i$ be the time when $i$ was censored or an event happened. Let $e_i= 1$ if an event was observed for $i$ and 0 otherwise. Then let $X_t = {i : T_i > t}$, and let $M_t = {i : e_i = 1 \text{ or } T_i > t}$. The estimator you will compute will be:
 
 $$
 \hat{S}(t) = \frac{|X_t|}{|M_t|}
 $$
-
-
 
 ```python
 def naive_estimator(t, df):
@@ -258,26 +246,27 @@ print("Test case 4: S(5)")
 print(f"Output: {naive_estimator(5, sample_df)}")
 ```
 
-    Test Cases
-    Sample dataframe for testing code:
-       Time  Event
-    0     5      0
-    1    10      1
-    2    15      0
-    
-    
-    Test Case 1: S(3)
-    Output: 1.0
-    
-    Test Case 2: S(12)
-    Output: 0.5
-    
-    Test Case 3: S(20)
-    Output: 0.0
-    
-    Test case 4: S(5)
-    Output: 0.5
+```
+Test Cases
+Sample dataframe for testing code:
+   Time  Event
+0     5      0
+1    10      1
+2    15      0
 
+
+Test Case 1: S(3)
+Output: 1.0
+
+Test Case 2: S(12)
+Output: 0.5
+
+Test Case 3: S(20)
+Output: 0.0
+
+Test case 4: S(5)
+Output: 0.5
+```
 
 We will plot the naive estimator using the real data up to the maximum time in the dataset. 
 
@@ -295,10 +284,7 @@ plt.ylabel("Estimated cumulative survival rate")
 plt.show()
 ```
 
-
 ![png](/assets/output_21_0.png)
-
-
 
 Next let's compare this with the Kaplan Meier estimate. 
 
@@ -403,32 +389,33 @@ x, y = HomemadeKM(sample_df)
 print("Event times: {}, Survival Probabilities: {}".format(x, y))
 ```
 
-    TEST CASES:
-    
-    Test Case 1
-    
-    Test DataFrame:
-       Time  Event
-    0     5      0
-    1    10      1
-    2    15      0
-    
-    Output:
-    Event times: [0, 5, 10, 15], Survival Probabilities: [1.0, 1.0, 0.5, 0.5]
-    
-    Test Case 2
-    
-    Test DataFrame:
-       Time  Event
-    0     2      0
-    1    15      0
-    2    12      1
-    3    10      1
-    4    20      1
-    
-    Output:
-    Event times: [0, 2, 10, 12, 15, 20], Survival Probabilities: [1.0, 1.0, 0.75, 0.5, 0.5, 0.0]
+```
+TEST CASES:
 
+Test Case 1
+
+Test DataFrame:
+   Time  Event
+0     5      0
+1    10      1
+2    15      0
+
+Output:
+Event times: [0, 5, 10, 15], Survival Probabilities: [1.0, 1.0, 0.5, 0.5]
+
+Test Case 2
+
+Test DataFrame:
+   Time  Event
+0     2      0
+1    15      0
+2    12      1
+3    10      1
+4    20      1
+
+Output:
+Event times: [0, 2, 10, 12, 15, 20], Survival Probabilities: [1.0, 1.0, 0.75, 0.5, 0.5, 0.0]
+```
 
 Now let's plot the two against each other on the data to see the difference.
 
@@ -449,16 +436,16 @@ plt.legend()
 plt.show()
 ```
 
-
 ![png](/assets/output_26_0.png)
 
-
 <a name='5'></a>
+
 ## 5. Subgroup Analysis
 
 We see that along with Time and Censor, we have a column called `Stage_group`. 
-- A value of 1 in this column denotes a patient with stage III cancer
-- A value of 2 denotes stage IV. 
+
+* A value of 1 in this column denotes a patient with stage III cancer
+* A value of 2 denotes stage IV. 
 
 We want to compare the survival functions of these two groups.
 
@@ -480,9 +467,7 @@ plt.ylabel('Survival probability estimate')
 plt.savefig('two_km_curves', dpi=300)
 ```
 
-
 ![png](/assets/output_28_0.png)
-
 
 Let's compare the survival functions at 90, 180, 270, and 360 days
 
@@ -495,8 +480,6 @@ survivals.loc[:, 'Group 2'] = km2.survival_function_at_times(survivals['time']).
 ```python
 survivals
 ```
-
-
 
 <table border="1">
   <thead>
@@ -535,12 +518,10 @@ survivals
   </tbody>
 </table>
 
-
-
-
 This makes clear the difference in survival between the Stage III and IV cancer groups in the dataset. 
 
 <a name='5-1'></a>
+
 ## 5.1 Log-Rank Test
 
 To say whether there is a statistical difference between the survival curves we can run the log-rank test. This test tells us the probability that we could observe this data if the two curves were the same. The derivation of the log-rank test is somewhat complicated, but luckily `lifelines` has a simple function to compute it. 
@@ -554,11 +535,10 @@ def logrank_p_value(group_1_data, group_2_data):
 logrank_p_value(S1, S2)
 ```
 
-
-
-
-    0.009588929834755544
-
-
+```
+0.009588929834755544
+```
 
 p value of less than `0.05`, which indicates that the difference in the curves is indeed statistically significant.
+
+Credits: Coursera Ai in medicine course
