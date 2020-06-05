@@ -1,12 +1,12 @@
 ---
 path: regular expression
-date: 2020-06-02T05:18:17.853Z
+date: 2020-06-05T05:18:17.853Z
 title: Regular Expression - A very important tool for data science
 description: everything about regular expression to use in deeplearning to filter filename
 ---
 \# **Blog 13**
 
-Credits: fastai ( Jeremy says regular expression is important tool to consider learning, after completing the first part of course, I felt it necessary to write a blog on this. I should have written this blog earlier, but remembered about this topic, when I was going through fastai v2)  
+Credits: fastai ( Jeremy says regular expression is important tool to consider learning. After completing the first part of course, I felt it necessary to write a blog on this. I should have written this blog earlier, but remembered about this topic, when I was going through fastai v2)  
 
 check [fastai v2 ](https://dev.fast.ai/) 
 
@@ -14,24 +14,28 @@ Regular expression is a sequence of characters mainly used to find and replace p
 
 Lets discuss problem that can be solved using regular expression. (example is from fastai course)
 
-While solving Deep Learning problems, we have dataset and there may be times when label is stored in file name. So that we will have path and need to extract label from it. Or there may be situation you need to extract information from website. In these or many situation like these regular expression is important tool.
+While solving Deep Learning problems, we have dataset and there may be times when label is stored in file name. So that we will have path and need to extract label from it. Or there may be situation you need to extract information from website. In these or similar situation, regular expression is important tool.
 
-Lets get with easy example first. 
+Lets get started with easy example first. 
 
-Think like you have document and you want to search names of all people with first name 'Kiran' and any last name, how to do it?? here regular expressions comes into play.
+Think that you have document and you want to search names of all people with first name 'Kiran' (last name can be anything),  
+how to do it??   
+here regular expressions comes into play.
 
 regular expression: '**Kiran\s\w+\s'**
 
-Here \s means a space and \w means character + means 1 or more characters.
+Here \s means a space and \w means character + means 1 or more characters.  
+This extracts all names with first name Kiran along with last name.
 
 Lets see example where label is in file name path:
 
 `data/oxford-iiit-pet/images/american_bulldog_146.jpg  
 data/oxford-iiit-pet/images/german_shorthaired_137.jpg`
 
+american_bulldog is label of that image.  
 But how to extract it???
 
-Writing regular expression is similar the way we approach the problem. seeing the example above we can tell that label is found after last forward slash(/) and after label we have number and ending with `.jpg`
+Writing regular expression is similar the way we approach the problem. seeing the example above we can tell that label is found after last forward slash(/) and after label we have number and path is ending with `.jpg` format
 
 Regular expression is **/(\[^/]+)_\d+.jpg$**
 
@@ -49,6 +53,7 @@ I'll explain step by step.
 `python code`
 
 ```
+import re
 string = 'data/oxford-iiit-pet/images/american_bulldog_146.jpg'  
 pat = r'([^/]+)_\d+.jpg$'  
 pat = re.compile(pat)  
