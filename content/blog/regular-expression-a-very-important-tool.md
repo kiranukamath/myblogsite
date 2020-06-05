@@ -6,7 +6,7 @@ description: everything about regular expression to use in deeplearning to filte
 ---
 \# **Blog 13**
 
-Credits: fastai ( Jeremy says regular expression is important tool to consider learning. After completing the first part of course, I felt it necessary to write a blog on this. I should have written this blog earlier, but remembered about this topic, when I was going through fastai v2)  
+Inspiration for writing this blog: fastai ( Jeremy says regular expression is important tool to consider learning. After completing the first part of course, I felt like writing a blog on this, but forgot. I should have written this blog earlier, but remembered about this topic, when I was going through fastai v2)  
 
 check [fastai v2 ](https://dev.fast.ai/) 
 
