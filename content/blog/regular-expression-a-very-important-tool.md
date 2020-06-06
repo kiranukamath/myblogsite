@@ -18,13 +18,13 @@ While solving Deep Learning problems, we have dataset and there may be times whe
 
 Lets get started with easy example first. 
 
-Think that you have document and you want to search names of all people with first name 'Kiran' (last name can be anything),  
-how to do it??   
+Think that you have document and you want to search names of all people with first name 'Kiran' (last name can be anything),\
+how to do it??\
 here regular expressions comes into play.
 
 regular expression: '**Kiran\s\w+\s'**
 
-Here \s means a space and \w means character + means 1 or more characters.  
+Here \s means a space and \w means character + means 1 or more characters.\
 This extracts all names with first name Kiran along with last name.
 
 Lets see example where label is in file name path:
@@ -32,7 +32,7 @@ Lets see example where label is in file name path:
 `data/oxford-iiit-pet/images/american_bulldog_146.jpg  
 data/oxford-iiit-pet/images/german_shorthaired_137.jpg`
 
-american_bulldog is label of that image.  
+american_bulldog is label of that image.\
 But how to extract it???
 
 Writing regular expression is similar the way we approach the problem. seeing the example above we can tell that label is found after last forward slash(/) and after label we have number and path is ending with `.jpg` format
@@ -71,7 +71,7 @@ $ End of string
 
 \b Word boundary
 
-\* 0 or more
+* 0 or more
 
 + 1 or more
 
@@ -109,8 +109,6 @@ $ End of string
 
 \[0-7] Digit from 0 to 7
 ```
-
-
 
 I have explained regular expression with just two example but the purpose was to introduce you to regular expression and what it can do. This blog is written to introduce you to power of regular expressions. Regular expression if learnt how to use, can be important tool in your data science tool-box. 
 
