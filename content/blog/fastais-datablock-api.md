@@ -10,13 +10,13 @@ Welcome!!!
 
 This blog written with purpose of introducing you to fastai's awesome datablock api. This is first part of blog and the part 2 will be code approach.
 
-Even though fastai follows top down approach, I am writing this first part of blog with no code, and theoretical approach which sets motive to learn datablock with code in part2.
+Even though fastai follows top down approach, I am writing this first part of blog with no code, and theoretical explanation which sets motive to learn datablock with code in part2.(in course Jeremy gives motive and awesome explanation to why use it, before code, So I find that important before writing code.)
 
 So lets start!!!
 
-If you have used any deep learning framework( I use PyTorch so speak wrt it) to build a model to solve a problem, you go through steps of collecting the data, what type of problem is it(like classification), see what are dependent and independent variables, how to split the data into training and validation set, apply transforms to improve accuracy.
+If you have used any deep learning framework( I use PyTorch so speak w.r.t. it) to build a model to solve a deep learning problem, you go through steps of collecting the data, what type of problem is it(like image classification, segmentation ), see what are dependent and independent variables, how to split the data into training and validation set, apply transforms to improve accuracy. 
 
-You may also have written lengthy code to all these task, but what if I tell you, you can do it in one single block then it would awesome(You also do all that in normal way and refactor it but this datablock approach looks good to me, since I do less error while following this)
+And in that process you may also have written lengthy code to all these task, but what if I tell you, you can do it in one single block then it would awesome(You can also do all that in normal way and refactor it but this datablock approach looks good to me, since I do less error while following this)
 
 So What is **Data Block** api???
 
@@ -24,19 +24,18 @@ Data block api is high level api in fastai. The data block API is an expressive 
 
 Think of the DataBlock as a list of instructions to do when we're building batches and our DataLoaders. It doesn't need any items explicitly to be done, and instead is a blueprint of how to operate. Writing a DataBlock is just like writing a blueprint.
 
-We just now saw a word DataLoaders. Lets see about that. PyTorch and fastai have two main classes for representing and accessing a training set or validation set:\
-`Dataset`:: A collection that returns a tuple of your independent and dependent variable for a single item\
+We just now saw a word DataLoaders. Lets see about that. PyTorch and fastai have two main classes for representing and accessing a training set or validation set:  
+`Dataset`:: A collection that returns a tuple of your independent and dependent variable for a single item  
 `DataLoader`:: An iterator that provides a stream of mini-batches, where each mini-batch is a couple of a batch of independent variables and a batch of dependent variables 
 
-Interesting is that fastai provides two classes for bringing your training and validation sets together:\
-`Datasets`:: An object that contains a training Dataset and a validation Dataset\
+Interesting is that fastai provides two classes for bringing your training and validation sets together:  
+`Datasets`:: An object that contains a training Dataset and a validation Dataset  
 `DataLoaders`:: An object that contains a training DataLoader and a validation DataLoader.
 
 fastai library has a easy way of building DataLoaders such that it is simple enough for someone with minimal coding knowledge to get it, and also advanced enough to allow for exploration.
 
-There are steps for creating datablock lets see that.
-
-The steps are defined by the data block API that are question while seeing data:
+There are steps for creating datablock lets see that.  
+The steps are defined by the data block API that can be asked as questions while seeing data:
 
 * what is the types of your inputs/targets? (`Blocks`)
 * where is your data? (`get_items`)
@@ -79,13 +78,13 @@ The remaining two bricks of datablock api is item_tfms and batch_tfms which is a
 
 **batch_tfms** is batch transform applied on batches of data. This is done in GPU.
 
-Using this bricks in datablock we can approach and build dataloaders ready for different type of problems like classification, object detection, segmentation and all other different type of problems.
+Using these bricks in datablock we can approach and build dataloaders ready for different type of problems like classification, object detection, segmentation and all other different type of problems.
 
 Data blocks API provides a good balance of conciseness and expressiveness. In the data science domain the scikit-learn pipeline approach is widely used. This API provides a very high level of expressivity, but is not opinionated enough to ensure that a user completes all of the steps necessary to get their data ready for modelling, but that is done in fastai data block api. 
 
 Now that we have seen, what is datablock api lets wrap everything and build one.
 
-For example lets write code(only datablock) for single label classification of Oxford IIIT pets dataset.
+Its time!! lets see code(only datablock) for single label classification of Oxford IIIT pets dataset.
 
 ```
 pets = DataBlock(blocks=(ImageBlock,  CategoryBlock),  
