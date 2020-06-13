@@ -1,6 +1,6 @@
 ---
 path: datablock api
-date: 2020-06-13T03:38:21.162Z
+date: 2020-06-14T03:38:21.162Z
 title: Make code Simple with DataBlock api part1
 description: Introduction of datablock api.
 ---
