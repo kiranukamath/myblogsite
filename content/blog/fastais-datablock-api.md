@@ -6,6 +6,24 @@ description: all details of datablock api
 ---
 \# **Blog14**
 
+Welcome!!!
+
+This blog written with purpose of introducing you to fastai's awesome datablock api. This is first part of blog and the part 2 will be code approach.
+
+Even though fastai follows top down approach, I am writing this first part of blog with no code, and theoretical approach which sets motive to learn datablock with code in part2.
+
+So lets start!!!
+
+If you have used any deep learning framework( I use PyTorch so speak wrt it) to build a model to solve a problem, you go through steps of collecting the data, what type of problem is it(like classification), see what are dependent and independent variables, how to split the data into training and validation set, apply transforms to improve accuracy.
+
+You may also have written lengthy code to all these task, but what if I tell you, you can do it in one single block then it would awesome(You also do all that in normal way and refactor it but this datablock approach looks good to me, since I do less error while following this)
+
+So What is **Data Block** api???
+
+
+
+
+
 ## My idea
 
 * about datablock api as wrapper class to do lot of work to write in PyTorch takes long lines of code
