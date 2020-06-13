@@ -2,7 +2,7 @@
 path: datablock api
 date: 2020-06-09T03:38:21.162Z
 title: Make code Simple with DataBlock api part1
-description: all details of datablock api
+description: Introduction of datablock api.
 ---
 \# **Blog14**
 
