@@ -119,7 +119,7 @@ What is this Code???
 
 This is introduction part of blog, 
 
-Curious to know what is in the code then read part 2 of blog on Sunday, 21 June, 2020 10:30 am IST here.
+Curious to know what is in the code then read part 2 of blog on Sunday, 21 June, 2020 10:30 am IST [here](https://kirankamath.netlify.app/blog/make-code-simple-with-datablock-api-part2/).
 
 Credits:
 
