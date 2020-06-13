@@ -6,6 +6,10 @@ description: Introduction of datablock api.
 ---
 \# **Blog14**
 
+![Image by Esi Grünhagen from Pixabay ](/assets/blog14img0.jpg "Image by Esi Grünhagen from Pixabay ")
+
+
+
 Welcome!!!
 
 This blog written with purpose of introducing you to fastai's awesome datablock api. This is first part of blog and the part 2 will be code approach.
@@ -24,17 +28,17 @@ Data block api is high level api in fastai. The data block API is an expressive 
 
 Think of the DataBlock as a list of instructions to do when we're building batches and our DataLoaders. It doesn't need any items explicitly to be done, and instead is a blueprint of how to operate. Writing a DataBlock is just like writing a blueprint.
 
-We just now saw a word DataLoaders. Lets see about that. PyTorch and fastai have two main classes for representing and accessing a training set or validation set:  
-`Dataset`:: A collection that returns a tuple of your independent and dependent variable for a single item  
+We just now saw a word DataLoaders. Lets see about that. PyTorch and fastai have two main classes for representing and accessing a training set or validation set:\
+`Dataset`:: A collection that returns a tuple of your independent and dependent variable for a single item\
 `DataLoader`:: An iterator that provides a stream of mini-batches, where each mini-batch is a couple of a batch of independent variables and a batch of dependent variables 
 
-Interesting is that fastai provides two classes for bringing your training and validation sets together:  
-`Datasets`:: An object that contains a training Dataset and a validation Dataset  
+Interesting is that fastai provides two classes for bringing your training and validation sets together:\
+`Datasets`:: An object that contains a training Dataset and a validation Dataset\
 `DataLoaders`:: An object that contains a training DataLoader and a validation DataLoader.
 
 fastai library has a easy way of building DataLoaders such that it is simple enough for someone with minimal coding knowledge to get it, and also advanced enough to allow for exploration.
 
-There are steps for creating datablock lets see that.  
+There are steps for creating datablock lets see that.\
 The steps are defined by the data block API that can be asked as questions while seeing data:
 
 * what is the types of your inputs/targets? (`Blocks`)
