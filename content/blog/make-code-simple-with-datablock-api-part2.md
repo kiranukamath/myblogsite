@@ -9,3 +9,8 @@ description: 'See datablock api code, how to build from scratch'
 This is part two of my series Make code Simple with DataBlock API. If you have not read part one, see here. In it, we we have seen what DataBlock as a whole mean, what are the bricks that are put together to make datablock. In last blog I had stopped showing code so in this next blog, we'll be diving into code.
 
 Welcome!!!
+
+## Idea
+
+* write same datablock with pytorch and on fastai and compare number of code, and easy ness to make work.
+*
