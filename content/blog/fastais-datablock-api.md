@@ -94,8 +94,7 @@ Its time!! lets see code(only datablock) for single label classification of Oxfo
 pets = DataBlock(blocks=(ImageBlock,  CategoryBlock),  
 get_items=get_image_files,  
 splitter=RandomSplitter(),  
-get_y=Pipeline([attrgetter("name"),  
-RegexLabeller(pat = r'^(.*)_\d+.jpg$')]),  
+get_y=Pipeline([attrgetter("name"),RegexLabeller(pat = r'^(.*)_\d+.jpg$')]),  
 item_tfms=Resize(128),  
 batch_tfms=aug_transforms())
 ```
