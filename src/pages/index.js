@@ -29,6 +29,7 @@ class IndexPage extends React.Component {
         <p>
           I am currently pursuing Information science and Engineering in NIE mysore. Interested in machine learing.
         To look at my projects check <a href='https://kirankamath.netlify.app/blog/projects/'><Button marginTop="35px">Projects</Button></a>
+        <a href='https://kirankamatmgm.github.io/resume/'><Button marginTop="35px">Resume</Button></a>
         </p><br />
         <p>You can contact me through<br />
           email: kirankamat.mgm@gmail.com<br />
