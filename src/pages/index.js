@@ -27,7 +27,8 @@ class IndexPage extends React.Component {
         </h1>
         <p>Welcome to my Personal Website</p>
         <p>
-          I am currently pursuing Information science and Engineering in NIE mysore. Interested in machine learing.
+        I am interested in how neural networks solve problem and improving different ways of solving problem. Looking for opportunities to hone my skills to ensure my professional growth and benefit the organization. 
+        I have completed fastai course and gained skill in practical deep learning to build state of art machine learning models. I have also learnt javascript, reactjs, nodejs before entering into machine learning.
         To look at my projects check <a href='https://kirankamath.netlify.app/blog/projects/'><Button marginTop="35px">Projects</Button></a>
         <a href='https://kirankamatmgm.github.io/resume/'><Button marginTop="35px">Resume</Button></a>
         </p><br />
