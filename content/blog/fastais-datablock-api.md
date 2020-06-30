@@ -8,8 +8,6 @@ description: Introduction of datablock api.
 
 ![Image by Esi Grünhagen from Pixabay ](/assets/blog14img0.jpg "Image by Esi Grünhagen from Pixabay ")
 
-
-
 Welcome!!!
 
 This blog written with purpose of introducing you to fastai's awesome datablock api. This is first part of blog and the part 2 will be code approach.
@@ -103,7 +101,7 @@ What is this Code???
 
 Reminder: This is introduction part of blog, 
 
-Curious to know what is in the code, and how to write the code, then read part 2 of blog which will be published on Sunday, 21 June, 2020 10:30 am IST [here](https://kirankamath.netlify.app/blog/make-code-simple-with-datablock-api-part2/).
+Curious to know what is in the code, and how to write the code, then read part 2 of blog [here](https://kirankamath.netlify.app/blog/make-code-simple-with-datablock-api-part2/).
 
 Credits:
 
