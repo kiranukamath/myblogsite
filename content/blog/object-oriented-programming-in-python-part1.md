@@ -33,3 +33,49 @@ Restaurant is itself object
 food dishes is object
 
 waiter is also object
+
+
+
+So if waiter is object what are its attribute(characteristics) and methods(actions)???
+
+attributes are name,address,phone number, salary
+
+methods are taking order and serving dishes.
+
+
+
+So now we know about object, but object of two waiter may have different values which means there are two objects but the attributes and methods are same, which means both have common blue print.
+
+So blueprint of object is called class. And using this blueprint we can create many objects. 
+
+A function and a method look very similar. They both use the def keyword. They also have inputs and return outputs. The difference is that a method is inside of a class whereas a function is outside of a class.
+
+**Code**
+
+what is self 
+
+It is used to pass values to attributes and differentiate between these two objects
+
+Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of the that object. When you call the perticular method, self is implicitly passed in.
+
+
+
+class Shirt:
+
+\    def \_\_init\_\_(self, shirt_color, shirt_size, shirt_style, shirt_price):
+
+\    self.color = shirt_color
+
+\    self.size = shirt_size
+
+\    self.style = shirt_style
+
+\    self.price = shirt_price
+
+\    def change_price(self, new_price):        self.price = new_price
+
+\    def discount(self, discount):        return self.price * (1 - discount)
+
+
+
+shirt_one = Shirt('red','S','long-sleeve',25)
