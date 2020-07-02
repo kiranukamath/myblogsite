@@ -32,4 +32,4 @@ Restaurant is itself object
 
 food dishes is object
 
-waiter is also object.
+waiter is also object
