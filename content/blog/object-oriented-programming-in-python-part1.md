@@ -63,8 +63,6 @@ Did you notice methods look similar to functions?? A function and a method look 
 
 So let's see code of class.
 
-
-
 ```
 class Waiter:
     """The waiter class represents an type of person who takes order and serve dishes in a restaurant
@@ -81,58 +79,105 @@ class Waiter:
 
         Attributes:
             name (str): name of waiter object
-            waist_size (str): waist size of a pants object
-            length (str): length of a pants object
-            price (float): price of a pants object
+            address (str): address of a waiter object
+            height (int): height of a waiter object
+            salary (float): salary of a waiter object
         """
 
-        self.color = color
-        self.waist_size = waist_size
-        self.length = length
-        self.price = price
+        self.name = name
+        self.address = address
+        self.height = height
+        self.salary = salary
 
-    def change_price(self, new_price):
-        """The change_price method changes the price attribute of a pants object
+    def hike_salary(self, hike_percent):
+        """The hike_salary method changes the salary attribute of a waiter object
 
         Args: 
-            new_price (float): the new price of the pants object
+            hike_percent (float): the new salary of the waiter object
 
         Returns: None
 
         """
-        self.price = new_price
+        sal = self.salary + (hike_percent*self_salary)
+        self.salary = sal
 ```
 
-what is self 
+what is self?? I have used self many times in code.
 
-It is used to pass values to attributes and differentiate between these two objects
+It is used to pass values to attributes and differentiates between these two objects.
 
-Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of the that object. When you call the particular method, self is implicitly passed in.
+Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of that object. When you call the particular method, self is implicitly passed in.
 
-this code tells about OOPs and also use of docstrings
-
-See gausian distribution code...
+This code tells about OOPs and also the use of docstrings. 
 
 ## Dunder methods
 
-Dunder or magic methods in Python are the methods having two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading.  wait!! did you see those in above code?? yeah true, \_\_init\_\_ is dunder method, it is to override the default behavior.
+Dunder or magic methods in Python are the methods having two prefix and suffix underscores in the method name. Dunder here means “Double Under (Underscores)”. These are commonly used for operator overloading.  wait!! did you see those in the above code?? yeah true, \_\_init\_\_ is dunder method, it is to override the default behavior.
 
-**Note** that we have seen gaussian distribution earlier, so what if we try to add two gaussian distribution for example guess this
+Now let's look into Gaussian distribution class and understand how to use dunder.
 
+```
+class Gaussian():
+    """ Gaussian distribution class for calculating and 
+    visualizing a Gaussian distribution.
+    """
+    def __init__(self, mu = 0, sigma = 1):
+        
+        self.mean = mu
+        self.stdev = sigma
+        self.data = []
+    
+    def calculate_mean(self):
+        self.mean = 1.0 * sum(self.data) /len(self.data)
+        return self.mean
+
+    def calculate_stdev(self, sample=True):
+        if sample:
+            n = len(self.data) - 1
+        else:
+            n = len(self.data)
+        mean = self.mean
+        sigma = 0
+        for d in self.data:
+            sigma += (d - mean) ** 2
+        sigma = math.sqrt(sigma / n)
+        self.stdev = sigma        
+        return self.stdev
+```
+
+```
+gaussian_one = Gaussian(25, 3)
+```
+
+So how to add two gaussian distribution, if you see mathametical explanation it seems easy but how to do it in code if you try below you get error.
+
+```
 gaus_a + gaus_b = Yes we get error!!!
+```
 
-So how to add these, here comes dunder methods
+ Now comes dunder methods.
 
-There is dunder called \_\_add\_\_  method of a Python class which will help to add two instances of a custom object. This means that we can control the result of a sum of two objects by modifying or defying the \_\_add\_\_ method.
+There is a dunder called \_\_add\_\_  method of a Python class which will help to add two instances of a custom object. This means that we can control the result of a sum of two objects by modifying or defying the \_\_add\_\_ method.
 
-**CODE**
+If you add this code inside above Gaussian class then some magic happens.
 
-This way we can rewrite code all the default behavior isn't this useful???
+```
+def __add__(self, other):
+   result = Gaussian()
+   result.mean = self.mean + other.mean
+   result.stdev = math.sqrt(self.stdev**2 + other.stdev**2)
+        
+   return result
+```
 
-**Inheritance**
+Now the which gave would work fine :)
 
-In the restaurant example we saw that food dish, for example, is object but all other food dishes will have separate classes but why to take the trouble to build separate classes for everything, could there be a better way??? so inheritance helps here.
+This way we can rewrite code and change all the default behavior isn't this useful???
 
-we could have class called food dish and have all attributes that are common to all food item and inherit that class for different food dish. Now what if you want to add attribute to all food dishes called seasonal, instead of adding it to all we can add it to main root class and all other classes will inherit from it. This saves a lot of time and effort.
+## **Inheritance**
+
+In the restaurant example, we saw that food dish, for example, is object but all other food dishes will have separate classes but why to take the trouble to build separate classes for everything, could there be a better way??? so inheritance helps here.
+
+we could have a general class called food dish and have all attributes that are common to all food items and inherit that class for the different food dish. Now, what if you want to add the attribute to all food dishes called seasonal, instead of adding it to all we can add it to the main root class and all other classes will inherit from it. This saves a lot of time and effort.
 
 **Credit:** Udacity AWS Machine Learning Scholarship Challenge course.
