@@ -10,7 +10,11 @@ We have all used Object-Oriented Programming knowingly or otherwise. If you are 
 
 Have you wondered how famous packages which we use like scikit-learn works???(how it is built)
 
-What does it mean when we use import pandas as pd pd.read_csv()
+What does it mean when we use 
+
+```
+import pandas as pd pd.read_csv()
+```
 
 You actually use concepts of OOPs So let's get started
 
@@ -34,13 +38,13 @@ food dishes is object
 
 waiter is also object
 
-So if waiter is object what are its attribute(characteristics) and methods(actions)???
+So if the waiter is object what are its attribute(characteristics) and methods(actions)???
 
-attributes are name,address,phone number, salary
+attributes are name, address, phone number, salary
 
 methods are taking order and serving dishes.
 
-So now we know about object, but object of two waiter may have different values which means there are two objects but the attributes and methods are same, which means both have common blue print.
+So now we know about object, but object of two waiter may have different values which mean there are two objects but the attributes and methods are the same, which means both have common blueprint.
 
 So blueprint of object is called class. And using this blueprint we can create many objects. 
 
@@ -52,7 +56,7 @@ what is self
 
 It is used to pass values to attributes and differentiate between these two objects
 
-Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of the that object. When you call the perticular method, self is implicitly passed in.
+Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of the that object. When you call the particular method, self is implicitly passed in.
 
 ```
 class Pants:
