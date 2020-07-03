@@ -21,7 +21,7 @@ What is pandas and where did this read_csv() come from and can it be used withou
 
 Then this blog is for you. 
 
-Lets get started. Welcome:)
+Let's get started. Welcome:)
 
 We actually use concepts of OOPs 
 
@@ -33,56 +33,49 @@ Object-oriented programming is a style of writing programs using classes and obj
 
 object-oriented programming allows you to create large, modular programs that can easily expand over time.
 
-object-oriented programs hide the implementation from the end-user. When you train a machine learning algorithm with Scikit-learn, you don't have to know anything about how the algorithms work or how they were coded. You can focus directly on the modeling. If the implementation changes, you as a user of package might not ever find out.
+object-oriented programs hide the implementation from the end-user. When you train a machine learning algorithm with Scikit-learn, you don't have to know anything about how the algorithms works or how they were coded. You can focus directly on the modeling. If the implementation changes, you as a user of the package might not ever find out.
 
 Objects are defined by attributes and methods.
 
-Think objects as things that exist in the real world.
-
+Think objects as things that exist in the real world.\
 For example, If we take Restaurant
 
-Restaurant is itself object 
+* Restaurant is itself object 
+* food dishes is object
+* waiter is also object
 
-food dishes is object
+So if the waiter is a object what are its attribute(characteristics) and methods(actions)???
 
-waiter is also object
+Attributes of waiter are name, address, phone number, salary
 
-So if the waiter is object what are its attribute(characteristics) and methods(actions)???
+Methods of waiter are taking order and serving dishes.
 
-attributes are name, address, phone number, salary
+So now we know about objects, but object of two waiter may have different values which mean there are two objects but the attributes and methods are the same, which means both have common attribute type but with different values which means has a common blueprint.
 
-methods are taking order and serving dishes.
+So the blueprint of object is called class. And using this blueprint we can create many objects. 
 
-So now we know about object, but object of two waiter may have different values which mean there are two objects but the attributes and methods are the same, which means both have common blueprint.
+Did you notice methods look similar to functions?? A function and a method look very similar. They both use the def keyword. They also have inputs and return outputs. The difference is that a method is inside of a class whereas a function is outside of a class.
 
-So blueprint of object is called class. And using this blueprint we can create many objects. 
+So let's see code of class.
 
-A function and a method look very similar. They both use the def keyword. They also have inputs and return outputs. The difference is that a method is inside of a class whereas a function is outside of a class.
 
-**Code**
-
-what is self 
-
-It is used to pass values to attributes and differentiate between these two objects
-
-Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of the that object. When you call the particular method, self is implicitly passed in.
 
 ```
-class Pants:
-    """The Pants class represents an article of clothing sold in a store
+class Waiter:
+    """The waiter class represents an type of person who takes order and serve dishes in a restaurant
     """
 
-    def __init__(self, color, waist_size, length, price):
+    def __init__(self, name, address, height, salary):
         """Method for initializing a Pants object
 
         Args: 
-            color (str)
-            waist_size (int)
-            length (int)
-            price (float)
+            name (str)
+            address (str)
+            height (int)
+            salary (float)
 
         Attributes:
-            color (str): color of a pants object
+            name (str): name of waiter object
             waist_size (str): waist size of a pants object
             length (str): length of a pants object
             price (float): price of a pants object
@@ -104,6 +97,12 @@ class Pants:
         """
         self.price = new_price
 ```
+
+what is self 
+
+It is used to pass values to attributes and differentiate between these two objects
+
+Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of the that object. When you call the particular method, self is implicitly passed in.
 
 this code tells about OOPs and also use of docstrings
 
@@ -131,4 +130,4 @@ In the restaurant example we saw that food dish, for example, is object but all 
 
 we could have class called food dish and have all attributes that are common to all food item and inherit that class for different food dish. Now what if you want to add attribute to all food dishes called seasonal, instead of adding it to all we can add it to main root class and all other classes will inherit from it. This saves a lot of time and effort.
 
-**Credit:** udacity
+**Credit:** Udacity AWS Machine Learning Scholarship Challenge course.
