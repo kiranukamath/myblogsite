@@ -33,7 +33,12 @@ Object-oriented programming is a style of writing programs using classes and obj
 
 object-oriented programming allows you to create large, modular programs that can easily expand over time.
 
-object-oriented programs hide the implementation from the end-user. When you train a machine learning algorithm with Scikit-learn, you don't have to know anything about how the algorithms works or how they were coded. You can focus directly on the modeling. If the implementation changes, you as a user of the package might not ever find out.
+object-oriented programs hide the implementation from the end-user. When you train a machine learning algorithm with Scikit-learn, you don't have to know anything about how the algorithms work or how they were coded. You can focus directly on the modeling. If the implementation changes, you as a user of the package might not ever find out.
+
+A Python package does not need to use object-oriented programming. You could simply have a Python module with a set of functions. However, most if not all of the popular Python packages take advantage of object-oriented programming because:
+
+1. Object-oriented programs are relatively easy to expand especially because of inheritance
+2. Object-oriented programs obscure functionality from the user. 
 
 Objects are defined by attributes and methods.
 
