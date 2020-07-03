@@ -29,8 +29,9 @@ class IndexPage extends React.Component {
         <p>
         I am interested in how neural networks solve problem and improving different ways of solving problem. Looking for opportunities to hone my skills to ensure my professional growth and benefit the organization. 
         I have completed fastai course and gained skill in practical deep learning to build state of art machine learning models. I have also learnt javascript, reactjs, nodejs before entering into machine learning.
-        To look at my projects check <a href='https://kirankamath.netlify.app/blog/projects/'><Button marginTop="35px">Projects</Button></a>
+        To look at my projects check <a href='https://kirankamath.netlify.app/blog/projects/'><Button marginTop="35px">Projects</Button></a> &nbsp;
         <a href='https://kirankamatmgm.github.io/resume/'><Button marginTop="35px">Resume</Button></a>
+        <a href='https://kirankamath.netlify.app/blog/certificates/'><Button marginTop="35px">Courses and Certificates</Button></a>
         </p><br />
         <p>You can contact me through<br />
           email: kirankamat.mgm@gmail.com<br />
