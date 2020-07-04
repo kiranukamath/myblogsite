@@ -5,3 +5,5 @@ title: OOP in Python part2 - make a Python package
 description: make a python package part2
 ---
 \#**Blog17**
+
+procedure of putting code to PyPI
