@@ -53,15 +53,13 @@ So if the waiter is a object what are its attribute(characteristics) and methods
 
 Attributes of waiter are name, address, phone number, salary
 
-Methods of waiter are taking order and serving dishes.
+Methods of waiter are taking order, hike in salary, and serving dishes.
 
-So now we know about objects, but object of two waiter may have different values which mean there are two objects but the attributes and methods are the same, which means both have common attribute type but with different values which means has a common blueprint.
+So now we know about objects, but object of two waiter may have different values which mean there are two objects but the attributes and methods are the same, which means both have common attribute type but with different values which means two objects has a common blueprint.
 
-So the blueprint of object is called class. And using this blueprint we can create many objects. 
+So the blueprint of an object is called class. And using this blueprint we can create many objects. 
 
-Did you notice methods look similar to functions?? A function and a method look very similar. They both use the def keyword. They also have inputs and return outputs. The difference is that a method is inside of a class whereas a function is outside of a class.
-
-So let's see code of class.
+So let's see the code of the class.
 
 ```
 class Waiter:
@@ -107,6 +105,8 @@ what is self?? I have used self many times in code.
 It is used to pass values to attributes and differentiates between these two objects.
 
 Self tells Python where to look in the computer's memory for the a object. And then Python changes the value of that object. When you call the particular method, self is implicitly passed in.
+
+Did you notice methods that look similar to functions?? A function and a method look very similar. They both use the def keyword. They also have inputs and return outputs. The difference is that a method is inside of a class whereas a function is outside of a class.
 
 This code tells about OOPs and also the use of docstrings. 
 
@@ -159,7 +159,7 @@ gaus_a + gaus_b = Yes we get error!!!
 
 There is a dunder called \_\_add\_\_  method of a Python class which will help to add two instances of a custom object. This means that we can control the result of a sum of two objects by modifying or defying the \_\_add\_\_ method.
 
-If you add this code inside above Gaussian class then some magic happens.
+If you add this code inside the above Gaussian class then some magic happens.
 
 ```
 def __add__(self, other):
@@ -170,14 +170,32 @@ def __add__(self, other):
    return result
 ```
 
-Now the which gave would work fine :)
+Now the code which gave you error before would work fine :)
 
 This way we can rewrite code and change all the default behavior isn't this useful???
 
 ## **Inheritance**
 
-In the restaurant example, we saw that food dish, for example, is object but all other food dishes will have separate classes but why to take the trouble to build separate classes for everything, could there be a better way??? so inheritance helps here.
+In the restaurant example, we saw that food dish is an object which means that all other food dishes will have separate classes but why to take the trouble to build separate classes for everything, could there be a better way??? 
 
-we could have a general class called food dish and have all attributes that are common to all food items and inherit that class for the different food dish. Now, what if you want to add the attribute to all food dishes called seasonal, instead of adding it to all we can add it to the main root class and all other classes will inherit from it. This saves a lot of time and effort.
+so the concept of inheritance helps here.
 
-**Credit:** Udacity AWS Machine Learning Scholarship Challenge course.
+we could have a general class called food dish and have all attributes that are common to all food items and inherit that class for the different food dishes. Now, what if you want to add the attribute to all food dishes called seasonal, instead of adding it to all we can add it to the main root class and all other classes will inherit from it. This saves a lot of time and effort. 
+
+To inherit a class we need to write a general main class and use that class name inside the parenthesis in the child class.
+
+```
+class Gaussian(Distribution):
+```
+
+Distribution is main class and Gaussian(child) uses the Distribution class.
+
+In this blog, we have seen all basics of OOP. Remember at the start of blog I said famous packages will use OOP concepts to build packages, so learning of OOP is incomplete unless you apply your knowledge on how to use OOP. 
+
+So in the next blog, we will see how to create a package with python using OOP concepts and upload it to PyPI, after which you can use the package you created using pip install.
+
+**Credit:** Udacity course.
+
+Part 2 of this blog will be published on July 11, 2020, here.
+
+Thank you for reading this blog:)
