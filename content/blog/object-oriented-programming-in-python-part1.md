@@ -196,6 +196,6 @@ So in the next blog, we will see how to create a package with python using OOP c
 
 **Credit:** Udacity course.
 
-Part 2 of this blog will be published on July 11, 2020, here.
+Part 2 of this blog will be published on July 11, 2020, [here](https://kirankamath.netlify.app/blog/oop-in-python-part2-make-a-python-package).
 
 Thank you for reading this blog:)
