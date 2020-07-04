@@ -6,6 +6,8 @@ description: learn oops to finally build a package and upload to PyPi
 ---
 \# **Blog16**
 
+![Image by Christelle Olivier from Pixabay](/assets/blog16img0.png "Image by Christelle Olivier from Pixabay")
+
 We have all used Object-Oriented Programming knowingly or otherwise. If you are gathering skills to be a data scientist then OOP is also an important topic to learn. 
 
 Have you wondered how famous packages which we use like scikit-learn works(how it is built)???
