@@ -10,7 +10,7 @@ This is part two of my series Make code Simple with DataBlock API. If you have n
 
 Welcome!!!
 
-## Let
+Let us dive directly into code
 
 ```
 !pip install -q fastai2
@@ -62,7 +62,7 @@ So there are different types of blocks.
 
 So depending on type of domain these blocks can be used.
 
-So coming to our example The MaskBlock is generated with the codes that give the correpondence between pixel value of the masks and the object they correspond to.
+So coming to our example The MaskBlock is generated with the codes that give the correspondence between pixel value of the masks and the object they correspond to.
 
 ## Example 2
 
@@ -78,8 +78,6 @@ df.head()
 ```
 
 ![](/assets/blog15img2.png)
-
-
 
 ```python
 pascal = DataBlock(blocks=(ImageBlock, MultiCategoryBlock),
@@ -137,9 +135,9 @@ In example2 show_batch you see lot of erased boxes that is because of RandomEras
 
 Normalize is used without imagenet stats, now normalize is done based on mean and sd of that batch.
 
-`aug_transforms` is utility func to easily create a list of flip, rotate, zoom, warp, lighting transforms.
+`aug_transforms` is utility function to easily create a list of flip, rotate, zoom, warp, lighting transforms.
 
-Random flip with p=0.5 is added when do_flip=True. With p_affine we apply a random rotation of max_rotate degrees, a random zoom between min_zoom and max_zoom and a perspective warping of max_warp. With p_lighting we apply a change in brightness and contrast of max_lighting. Custon xtra_tfms can be added.
+Random flip with p=0.5 is added when do_flip=True. With p_affine we apply a random rotation of max_rotate degrees, a random zoom between min_zoom and max_zoom and a perspective warping of max_warp. With p_lighting we apply a change in brightness and contrast of max_lighting. Custom xtra_tfms can be added.
 
 So this is it:)
 
@@ -147,6 +145,8 @@ I assume you have understood introductory knowledge about datablock.
 
 It is actually easy but needs practise and getting used to it, you can create dataloaders using datablock api very quickly.
 
-You can practise in google colab [here](https://github.com/kirankamatmgm/Fastai-Data-Block-API/blob/master/Datablock.ipynb)
+You can practice in google colab [here](https://github.com/kirankamatmgm/Fastai-Data-Block-API/blob/master/Datablock.ipynb)
+
+Credit: fastai
 
 Thank you for giving your time:)
