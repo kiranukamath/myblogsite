@@ -147,6 +147,6 @@ I assume you have understood introductory knowledge about datablock.
 
 It is actually easy but needs practise and getting used to it, you can create dataloaders using datablock api very quickly.
 
-
+You can practise in google colab [here](https://github.com/kirankamatmgm/Fastai-Data-Block-API/blob/master/Datablock.ipynb)
 
 Thank you for giving your time:)
