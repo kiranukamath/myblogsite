@@ -6,7 +6,7 @@ description: 'See datablock api code, how to build from scratch'
 ---
 \# **Blog15**
 
-This is part two of my series Make code Simple with DataBlock API. If you have not read part one, see here. In it, we we have seen what DataBlock as a whole mean, what are the bricks that are put together to make datablock. In last blog I had stopped showing code so in this next blog, we'll be diving into code.
+This is part two of my series Make code Simple with DataBlock API. If you have not read part one, see [here](https://kirankamath.netlify.app/blog/fastais-datablock-api/). In it, we have seen what DataBlock as a whole means, what are the bricks that are put together to make datablock. In last blog, I had stopped showing code so, in this blog, we'll be diving into code.
 
 Welcome!!!
 
