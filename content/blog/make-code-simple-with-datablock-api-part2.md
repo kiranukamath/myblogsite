@@ -1,8 +1,8 @@
 ---
 path: datablock api part2
-date: 2020-06-13T14:39:56.458Z
+date: 2020-07-11T14:39:56.458Z
 title: Make code Simple with DataBlock api part2
-description: 'See datablock api code, how to build from scratch'
+description: 'Part2 of blog, explain datablock with code'
 ---
 \# **Blog15**
 
