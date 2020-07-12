@@ -6,6 +6,8 @@ description: >-
   I wrote this blog while learning from Jovian PyTorch course. This blog is
   about 5 PyTorch functions I like.
 ---
+\#**Blog19**
+
 I wrote this blog month ago while learning from jovian.ml PyTorch course. Had to write and submit a blog of 5 pytorch functions I like, as the first assignment. It was fun. 
 
 So let's get started.
@@ -24,8 +26,6 @@ These are the 5 functions I found interesting to write.
 # Import torch and other required modules
 import torch
 ```
-
-
 
 ## Function 1 - torch.clamp()
 
@@ -77,8 +77,6 @@ RuntimeError: At least one of 'min' or 'max' must not be None
 this needs a range without which function breaks
 
 Relu can be implemented using clamp function
-
-
 
 ## Function 2 - torch.argmax()
 
@@ -162,8 +160,6 @@ argmax gives error when we give invalid tensor, or tensor of not dimention dimen
 This function is used to find maximum value index\
 This function is simple but can be used in finding accuracy for single label classification by passing prediction to function. In final layer when it gives probabilities, this function can be used.
 
-
-
 ## Function 3 - torch.where()
 
 returns tensor of elements selected depending on condition provided.
@@ -218,8 +214,6 @@ TypeError: where(): argument 'input' (position 2) must be Tensor, not int
 ```
 
 position 2 is tensor, but we have passed int, so failed. so pass tensor in argument
-
-
 
 ## Function 4 - torch.from_numpy()
 
@@ -290,8 +284,6 @@ TypeError: expected np.ndarray (got list)
 given anything else then ndarray this function throws error.
 
 the need of this funtion is to convert from numpy nd array to tensor. but this mostly usefull because using numpy we can do operation in cpu and when need convert to tensor and run on gpu
-
-
 
 ## Function 5 - torch.matmul()
 
@@ -371,4 +363,3 @@ credits: PyTorch official docs, Jovian.ml
 Provide links to your references and other interesting articles about tensors
 
 * Official documentation for `torch.Tensor`: https://pytorch.org/docs/stable/tensors.html
-
