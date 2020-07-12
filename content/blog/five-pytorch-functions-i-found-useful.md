@@ -1,8 +1,10 @@
 ---
 path: five pytorch functions
-date: 2020-07-11T05:08:39.645Z
+date: 2020-07-12T05:08:39.645Z
 title: Five pytorch functions I found useful
-description: This is blog created for submission during jovianml PyTorch course.
+description: >-
+  I wrote this blog while learning from Jovian PyTorch course. This blog is
+  about 5 PyTorch functions I like.
 ---
 I wrote this blog month ago while learning from jovian.ml PyTorch course. Had to write and submit a blog of 5 pytorch functions I like, as the first assignment. It was fun. 
 
