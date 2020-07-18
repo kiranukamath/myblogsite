@@ -1,8 +1,12 @@
 ---
 path: MultiLabel Classification using Kfold Cross Validation
-date: 2020-07-05T03:05:23.537Z
+date: 2020-07-18T03:05:23.537Z
 title: fastai MultiLabel Classification using Kfold Cross Validation
-description: fastai MultiLabel Classification using Kfold Cross Validation
+description: >-
+  fastai MultiLabel Classification using Kfold Cross Validation. The problem I
+  have considered is Multi Label classification. In addition to having multiple
+  labels in each image, the other challenge in this problem is the existence of
+  rare classes and combinations of different classes.
 ---
 \#**Blog18**
 
