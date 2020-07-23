@@ -67,8 +67,8 @@ In foobar challenge time is not constraint till level 3 but if you are not worki
 
 Level 5 was more difficult than level 4. I was given weeks for that problem and forgot about the challenge, when I opened foobar I had only 2 days to complete and just lost in Level 5. 
 
-My suggestion
+## My suggestion
 
-So if you get an opportunity to work on Google foo bar challenge, don't look at the time given to you to solve the problem but just try to complete it and submit.
+So if you get an opportunity to participate in the Google foo bar challenge, don't look at the time given to you to solve the problem but just try to complete it and submit.
 
 If you submit early, just enjoy the remaining time to learn and prepare for the next level.
