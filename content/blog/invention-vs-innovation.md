@@ -23,8 +23,6 @@ Invention: Something new, having potential value through utility
 
 Innovation: Something new and uniquely useful" by Horace Dediu
 
-
-
 invention is said to be creation of new things. The smartphone, the car, the desktop computer these are inventions. Innovation is the continual upgrade of inventions.
 
 If you consider sending messages as invention then Whatsapp is innovation. And if you consider Whatsapp an invention then all features you get with each upgrade is innovation. There's no clear and obvious dividing line between the two but that's fine.
@@ -35,11 +33,7 @@ Example of drone.
 
 Innovating isn't the same as inventing.   Inventing is creating something that hasn't existed before, while innovating is changing or combining things - usually for commercial benefit.
 
-
-
 Invention without innovation can just create toys.  You may fulfil a personal desire to build, but may not deliver a return on the investment of time and resources.
-
-
 
 Edison didn't invent the lightbulb
 
@@ -53,13 +47,17 @@ Apple have made products that have owned and even defined their category. But th
 
 Was the iPhone a great invention?  NO. We can dissect the iPhone into individual inventions and evolutionary consolidations of other gadget functions and features. Was the iPhone a great innovation? Absolutely.The iPhone created an ecosystem of media content, telecommunications, licensing, application development, and unified them all under one roof. The iPad grew on that success and created a new “screen” to expand the mobile and personal experience
 
-
-
 Today it's easier to innovate than ever before. innovating today is easier than it has ever been, because of the platforms available.
 
-
-
 Given the choice to invent or innovate, most entrepreneurs would take the latter. Let’s face it, innovation is just sexier. Perhaps there are a few people who know who invented lens or GPS or LED or the camera. But virtually everyone on the planet knows who Steve Jobs is.
+
+
+
+
+
+
+
+
 
 A FINAL THOUGHT
 
@@ -70,19 +68,5 @@ So how do you know if you are inventing or innovating? Consider this analogy:
 If invention is lighting a lamp, innovation is the brightness effect that light from lamp causes so that we can see the room. Someone has to light the lamp. That’s the inventor. Someone has to recognize the lamp will eventually light the room. That’s the entrepreneur.
 
 I have not invented this blog, actually, I have read a dictionary and any articles to know the difference and put all together in my style so I have innovated this blog. 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 If you have a different view I'd like to hear your comments. You can either tweet or comment on Kaggle or Reddit.
