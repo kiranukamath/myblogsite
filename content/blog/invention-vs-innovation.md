@@ -11,6 +11,8 @@ description: >-
 
 **Inspiration for writing**: In recent times people are misusing the word 'invention' and 'innovation', and using it interchangeably. So to know more about the difference between the two, I am writing this blog.
 
+![Image by OpenClipart-Vectors from Pixabay](/assets/blog21img0.png "Image by OpenClipart-Vectors from Pixabay")
+
 Let us see how definition differentiates between the two.
 
 “**Invention**” can be defined as the creation of a product or introduction of a process for the first time. 
