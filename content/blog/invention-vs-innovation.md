@@ -7,6 +7,8 @@ description: >-
   all can contribute. I wanted to know about this so writing blog to learn with
   you all.
 ---
+\#**Blog21**
+
 Inspiration for writing: In recent times people are misusing word invention and innovation, and using it interchangeably. So to know more about the difference I am writing this blog.
 
 “invention” can be defined as the creation of a product or introduction of a process for the first time. “Innovation”  occurs if someone improves on or makes a significant contribution to an existing product, process or service. Innovate: Make changes in something established, especially by introducing new methods, ideas, or products.
@@ -50,14 +52,6 @@ Was the iPhone a great invention?  NO. We can dissect the iPhone into individual
 Today it's easier to innovate than ever before. innovating today is easier than it has ever been, because of the platforms available.
 
 Given the choice to invent or innovate, most entrepreneurs would take the latter. Let’s face it, innovation is just sexier. Perhaps there are a few people who know who invented lens or GPS or LED or the camera. But virtually everyone on the planet knows who Steve Jobs is.
-
-
-
-
-
-
-
-
 
 A FINAL THOUGHT
 
