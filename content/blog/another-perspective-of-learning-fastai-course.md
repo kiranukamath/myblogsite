@@ -13,7 +13,7 @@ I have completed fastai part1(2019) part2. So I want to express how fastai helpe
 **This is just my experience and what I feel about the course. So don't get me wrong, I am not discouraging anyone. But my true intention to inspire everyone to learn from fast.ai course and whatever may come your way, Just complete the course.**
 
 \
-My **glimpses** of fastai courses come 1 year ago when a friend suggested me fastai course. I first went through a few lessons after lesson 3 everything went above my understanding. Because I was used to the university bottom-up approach and went to learn how every line of code works in first attempt. Jeremy had warned to follow his words carefully. I missed on that. I want to summarise the mistakes that I had made when getting started so that hopefully, you will avoid making the same when doing fast.ai
+My **glimpses** of fastai courses come 1 year ago when a friend suggested me fastai course. I first went through a few lessons after lesson 3 everything went above my understanding. Because I was used to the university bottom-up approach and went to learn how every line of code works in the first attempt. Jeremy had warned to follow his words carefully. I missed on that. I want to summarise the mistakes that I had made when getting started so that hopefully, you will avoid making the same when doing fast.ai
 
 After my first attempt, I left that fastai course and started to learn from other Coursera courses. Until 7 months back when I wanted to build some working model on my own, I was able to do a very basic model and it was far away compared to the state of art results. At this point, I could remember the words of Jeremy "build state of art model" and wanted to explore the top-down approach. Surprisingly top-down approach suites me better than bottom-up. And this time I wanted to complete fastai course, finish what I had left uncompleted.
 
@@ -26,9 +26,16 @@ So what next after you complete course. Don't worry, there is another part. And 
 
 6 Months!!! Don't worry, you need that time to digest the content of the course and explore all techniques on a new dataset. 
 
-My suggestions:
+## My suggestions:
 
-Try another beginner friendly Python MOOC.
+* surrender your mind to Jeremy and listen to every word what he tells, and just follow it.
+* People will suggest you and you may also feel to try another beginner-friendly course, but don't quit fastai course, be persistent and finish what you started.
+* People may tell you, need to be able to read a lot of papers, it's correct. But the approach matters. At first, read what you can in the paper. convert math to code. And as you go you will get better.
+* Watching the lectures DOES NOT EQUATE TO DOING Deep learning. So write all code in the lesson, try to apply on a different kind of dataset.
+* At first, when you start, watch the lecture once. It's okay, you won’t understand everything, you don’t have to either. But the important thing is complete.
+* Code as much as you can.
+
+
 
 ## Perspective
 
@@ -36,20 +43,24 @@ Recently when I was watching part 2 of course for 3rd time, I had a new perspect
 
 I have gone through part1 of course nearly 6times and part2 of course 3 times(currently learning part2). All the words like epochs, learning rate, momentum, fit-one-cycle found like these apply to not just to a dataset but also a way of learning fastai course.
 
-Consider epochs as a number of times you need to watch and learn from fastai course.
+Consider **epochs** as a number of times you need to watch and learn from fastai course.
 
-Learning rate as a factor to learn the course. Discriminate learning rate may be treated as when you start the course you take small steps, and as you feel comfortable you take larger steps and as concept becomes difficult you take small steps.
+**Learning rate** as a factor to learn the course. **Discriminative learning rate** may be treated as when you start the course you take small steps, and as you feel comfortable you take larger steps and as the concept becomes difficult you take small steps.
 
-Momentum: after you complete the course once, you cover easy concepts of the course faster.
+**Momentum**: after you complete the course once, you cover easy concepts of the course faster.
 
-fit one cycle as complete course fully once and repeat for required epochs.
+**fit one cycle** as complete course fully once and repeat for required epochs.
 
-weights may be you understanding with deep learning concepts before you start course either random or zero or even pretrained if you have done other awesome courses.
+**weights** maybe you understanding with deep learning concepts before you start course either random or zero or even pre-trained if you have done other awesome courses.
 
-As you learn the course you weights gets changed from backpropogation. As we fully understand the course we get better accuracy. 
+As you learn the course you weights get changed from **backpropagation**. As we fully understand the course we get better accuracy. 
 
 Just this is not enough augmentation, dropout is also required to increase your understanding i.e. accuracy. 
 
-dropout can be treated as highly tough or things you dont want to get into in the beginning are drop out in first iteration and after few epoches approch it(even though it is not exactly dropout)
+**dropout** can be treated as highly tough or things you don't want to get into in the beginning are drop out in the first iteration and after few epochs approach it(even though it is not exactly dropout)
 
-Augmentation can be treated as learning same concepts in lessons on different datasets.
+**Augmentation** can be treated as learning the same concepts in lessons on different datasets.
+
+
+
+I would love to hear feedback, your perspective. You can tweet @UKamath7 or comment on kaggle, reddit or medium.
