@@ -61,6 +61,6 @@ Just this is not enough augmentation, dropout is also required to increase your 
 
 **Augmentation** can be treated as learning the same concepts in lessons on different datasets.
 
-
+**I did not know how to connect concepts of the loss function, optimizer and most importantly the help from forums into this crazy perspective. If you can help me connect dots I would be grateful.**
 
 I would love to hear feedback, your perspective. You can tweet @UKamath7 or comment on kaggle, reddit or medium.
