@@ -1,6 +1,6 @@
 ---
 path: google foobar challenge
-date: 2020-07-22T04:17:38.726Z
+date: 2020-07-25T04:17:38.726Z
 title: My experience of Google foobar challenge
 description: 'I got a Google code challenge, I participated and completed 4 Levels.'
 ---
@@ -31,7 +31,6 @@ It's kind of like a Linux console( UNIX command line like interface) where you g
 ![](/assets/blog20img3.jpeg)
 
 (I took this photo from my phone)
-
 
 There is some text at the top of the screen:
 
@@ -72,3 +71,5 @@ Level 5 was more difficult than level 4. I was given weeks for that problem and 
 So if you get an opportunity to participate in the Google foo bar challenge, don't look at the time given to you to solve the problem but just try to complete it and submit.
 
 If you submit early, just enjoy the remaining time to learn and prepare for the next level.
+
+For feedback, you can tweet or comment in Kaggle [here](https://www.kaggle.com/general/169271), or in [Reddit](https://www.reddit.com/r/programming/comments/hxft1o/my_experience_of_google_foobar_challenge/).
