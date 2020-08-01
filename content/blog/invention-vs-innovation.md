@@ -1,6 +1,6 @@
 ---
 path: Invention vs Innovation
-date: 2020-07-24T06:01:02.601Z
+date: 2020-08-01T06:01:02.601Z
 title: Invention vs Innovation
 description: >-
   Invention vs Innovation, which is important or more importantly in which we
@@ -74,4 +74,4 @@ If the invention is lighting a lamp, innovation is the brightness effect that li
 
 I have not invented this blog, actually, I have read a dictionary and many articles to know the difference and put all together in my style which means I have innovated this blog. Though I have created, it is innovation.
 
-If you have a different view I'd like to hear your comments. You can either [tweet](https://twitter.com/UKamath7) or comment on [Kaggle](https://www.kaggle.com/general/171168) or Reddit.
+If you have a different view I'd like to hear your comments. You can either [tweet](https://twitter.com/UKamath7) or comment on [Kaggle](https://www.kaggle.com/general/171168) or [Reddit](https://www.reddit.com/user/Kirankamat/comments/i1k805/invention_vs_innovation/).
