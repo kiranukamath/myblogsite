@@ -6,15 +6,13 @@ description: My views on completing fastai course
 ---
 ![Image taken from mlexplained,keitakurita](/assets/blog12img0.png "Image taken from mlexplained,keitakurita")
 
-I had written this post long ago and wanted to publish, but waited for fastai2 and fastai course 2020 release so that my experience might help new people joining the course. I welcome everyone who are starting the fastai course 2020 to fastai family.
+I had written this post long ago and wanted to publish, but waited for fastai2 and fastai course 2020 release so that my experience might help new people joining the course. fastai 2020 course is released. I welcome everyone who are starting the fastai course 2020 to fastai family.
 
 ## My experience with fastai
 
 I have completed fastai part1(2019) part2 and very much impressed by the course. It is one of the best courses available to learn deep learning. And it is free. What more do anyone need to get started with deep learning? 
 
 **This is just my experience and what I feel about the course. So don't get me wrong, I am not discouraging to join other courses in market but My true intention writing this blog is to tell everyone to join and learn from fast.ai course and whatever may come your way, Just complete the course.**
-
-
 
 My **glimpses** of fastai courses come 1 year ago when a friend suggested me fastai course. I first went through a few lessons after lesson 3 everything went above my understanding. Because I was used to the university bottom-up approach and went to learn how every line of code works in the first attempt. Jeremy had warned to follow his words carefully. I missed on that. I want to summarise the mistakes that I had made when getting started so that hopefully, you will avoid making the same when learning from the fast.ai course. 
 
