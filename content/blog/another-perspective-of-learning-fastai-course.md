@@ -1,6 +1,6 @@
 ---
 path: Another Perspective of learning fastai course
-date: 2020-05-30T09:28:52.977Z
+date: 2020-08-22T09:28:52.977Z
 title: Another Perspective of learning fastai course
 description: My views on completing fastai course
 ---
