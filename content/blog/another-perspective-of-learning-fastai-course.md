@@ -8,6 +8,8 @@ description: My views on completing fastai course
 
 I had written this post long ago and wanted to publish, but waited for fastai2 and fastai course 2020 release so that my experience might help new people joining the course. fastai 2020 course is released. I welcome everyone who are starting the fastai course 2020 to fastai family.
 
+Thank you Jeremy Howard and Rachel Thomas for their great contribution to the democratization of Deep Learning.
+
 ## My experience with fastai
 
 I have completed fastai part1(2019) part2 and very much impressed by the course. It is one of the best courses available to learn deep learning. And it is free. What more do anyone need to get started with deep learning? 
@@ -65,4 +67,4 @@ Augmentation, dropout is also required to increase your understanding i.e. accur
 
 **I did not know how to connect concepts of the loss function, optimizer and most importantly the help from forums into this crazy perspective. If you can help me connect the dots. I would be grateful.**
 
-I would love to hear feedback, your perspective. You can tweet [@UKamath7](https://twitter.com/UKamath7) or comment on kaggle, reddit or medium.
+I would love to hear feedback, your perspective. You can tweet [@UKamath7](https://twitter.com/UKamath7) or comment on [kaggle](https://www.kaggle.com/general/176492), [reddit](https://www.reddit.com/r/learnmachinelearning/comments/ie8kwx/another_perspective_of_learning_fastai_course/?utm_source=share&utm_medium=web2x&context=3) or medium.
