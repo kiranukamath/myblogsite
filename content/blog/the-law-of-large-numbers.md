@@ -6,15 +6,11 @@ description: >-
   How to think about events in such a way that they can be counted and a
   decision can be made about how much data is enough. concept of error variance
 ---
+\#**Blog23**
+
 What is Law of Large numbers????
 
-Let us understand with an example.
-
-consider a city with two hospitals.
-
-One, with about 15 births per day and one with about 45 births per day.
-
-There are about 50% of babies born who were boys and 50% who were girls. Probability is 50%.
+Let us understand with an example. Consider a city with two hospitals. One, with about 15 births per day and one with about 45 births per day. There are about 50% of babies born who were boys and 50% who were girls. Probability is 50%.
 
 Which of these hospitals, do you think has more days when 60% or more of the babies born are boys -- the hospital with 15 births per day or the hospital with 45 births per day?
 
