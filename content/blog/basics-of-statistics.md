@@ -4,7 +4,9 @@ date: 2020-10-22T04:00:25.726Z
 title: Variables and Correlation
 description: 'variables, correlation with examples'
 ---
-## First concept is concept of a **variable**. 
+\#**Blog22**
+
+## First concept is concept of a **variable**.
 
 A variable is something that varies, as opposed to a constant. 
 
