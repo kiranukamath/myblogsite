@@ -67,3 +67,5 @@ We know that performance can be much higher or much lower on any given occasion.
 The truth is the employer's judgment is even worse than the coach's judgement because interviews are not a sample of job performance or school performance. They're a sample of interview performance. Interviews and performance on the job require different skills.
 
 So the law of large numbers applies to all kinds of events in everyday life. We apply the law of large numbers when we see the variability, the error, but not for events that are just as important where we don't. The principle, here, is if your variable is human behavior, assume there is error variance, and adjust your judgement accordingly.
+
+Credit: Thanks to Richard E. Nisbett for Mindware: Critical Thinking for the Information Age course on Coursera.
