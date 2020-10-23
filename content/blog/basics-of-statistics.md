@@ -64,3 +64,5 @@ There are two very important points about the relationship between validity and 
 The first point is that there can be no validity if there is no reliability. If your measure gives you a different score every time and they're more or less random, so that you get a high score one measurement and a low score on another. And your friend gets a high score on one and a low score on the other and there's no relationship at all, then you can't have any validity for that measure. There has to be some stability, some degree of getting the same answer twice before you can have any validity for that measure at all.
 
 A second point is that reliability implies very little about validity. Now, if reliability is zero, there can't be any validity. But at the other extreme, reliability can be absolutely perfect, but there may be no validity.
+
+Credit: Thanks to Richard E. Nisbett for Mindware: Critical Thinking for the Information Age course on Coursera.
