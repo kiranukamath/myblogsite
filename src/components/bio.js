@@ -43,6 +43,8 @@ function Bio() {
               <a href={`https://linkedin.com/in/${social.linkedin}`}>
                 Linkedin
               </a>
+              
+              <script type="text/javascript" src="https://cdn.sender.net/webforms/17585/3d2e21c1.js?v=2"></script>                
             </p>
           </Container>
         )
