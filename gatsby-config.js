@@ -3,8 +3,8 @@ module.exports = {
     // edit below
     title: `Kiran U Kamath`,
     author: `Kiran U Kamath`,
-    description: `A starter personal blog with styled components, dark mode, and Netlify CMS.`,
-    siteUrl: `https://gatsby-starter-blog-demo.netlify.com/`,
+    description: `My Personal website showcasing projects and Blogs on technoloagy and philosophy`,
+    siteUrl: `https://kirankamath.netlify.app/`,
     social: {
       twitter: `UKamath7`,
       linkedin: `kiran-u-kamath`
