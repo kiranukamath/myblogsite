@@ -16,9 +16,9 @@ class IndexPage extends React.Component {
           keywords={[`Kiran U Kamath`, `machine learning`, `deep learning`, `artificial intelligence`, `nodejs`, `javascript`, `gatsby`, `react`]}
         />
         {/*<img style={{ margin: 0 }} src="./GatsbyScene.svg" alt="Gatsby Scene" />*/}
-        <Link to="/blog/">
+        <a href='https://kirankamath.hashnode.dev/'>
           <Button marginTop="35px">Go to Blog</Button>
-        </Link>
+        </a>
         <h1>
           Hello World{" "}
           <span role="img" aria-label="wave emoji">
@@ -46,7 +46,7 @@ class IndexPage extends React.Component {
         <div class="LI-profile-badge"  data-version="v1" data-size="large" data-locale="en_US" data-type="horizontal" data-theme="light" data-vanity="kiran-u-kamath"><a class="LI-simple-link" href='https://in.linkedin.com/in/kiran-u-kamath?trk=profile-badge'>Kiran U Kamath</a></div><script type="text/javascript" src="https://platform.linkedin.com/badges/js/profile.js" async defer></script>
 
 
-        <a class="twitter-timeline" href="https://twitter.com/UKamath7?ref_src=twsrc%5Etfw">Tweets by UKamath7</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" href="https://twitter.com/kiranukamath?ref_src=twsrc%5Etfw">Tweets by UKamath7</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
       </Layout>
     )
