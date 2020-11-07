@@ -3,7 +3,7 @@ module.exports = {
     // edit below
     title: `Kiran U Kamath`,
     author: `Kiran U Kamath`,
-    description: `My Personal website showcasing projects and Blogs on technoloagy and philosophy`,
+    description: `I am Deep-learning practitioner writing blogs on different technology and philosophy`,
     siteUrl: `https://kirankamath.netlify.app/`,
     social: {
       twitter: `UKamath7`,
