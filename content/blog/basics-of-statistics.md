@@ -1,6 +1,6 @@
 ---
 path: 'basics of Statistics '
-date: 2020-10-22T04:00:25.726Z
+date: 2020-11-09T04:00:25.726Z
 title: Variables and Correlation
 description: 'variables, correlation with examples'
 ---
