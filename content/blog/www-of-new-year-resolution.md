@@ -12,6 +12,8 @@ This blog mainly divided into 3 Ws of new year resolution.
 2. **W**hy new year resolutions are required?
 3. ho**W** to follow it efficiently without breaking any?
 
+![this is gif](/assets/kiran_kamath_intro.gif)
+
 # What are new year's resolutions?
 
 A New Year's resolution is a tradition, in which a person resolves to continue good practices, change an undesired trait or behavior, to accomplish a personal goal, or improve their life.
