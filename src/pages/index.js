@@ -26,7 +26,7 @@ class IndexPage extends React.Component {
           </span>
         </h1>
         <p>Welcome to my Personal Website</p>
-	    <img src="https://github.com/kirankamatmgm/kirankamatmgm/blob/main/photos/kiran_kamath_intro.gif" alt="This is gif" />
+	    <img src="static/kiran_kamath_intro.gif" alt="This is gif" />
         <p>
         I am interested in how neural networks solve problem and improving different ways of solving problem. Looking for opportunities to hone my skills to ensure my professional growth and benefit the organization. 
         I have completed fastai course and gained skill in practical deep learning to build state of art machine learning models. I have also learnt javascript, reactjs, nodejs before entering into machine learning.
